@@ -1,0 +1,3 @@
+version=3
+http://archive.xfce.org/src/apps/xfce4-terminal/([\d\.]+)/ \
+	xfce4-terminal-([\d\.]+)\.tar\.(?:gz|bz2)

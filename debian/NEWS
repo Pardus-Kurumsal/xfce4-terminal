@@ -1,0 +1,14 @@
+xfce4-terminal (0.6.2-3) unstable; urgency=low
+
+  Starting with 0.6, xfce4-terminal doesn't support anymore setting
+  keybindings in the preferences, but support it using GTK accelerators.
+
+  If you want to edit them, you need to enable that features. Under Xfce you
+  do that using the appearance settings (xfce4-appearance-settings), last tab
+  (Settings), where you tick the “Enable editable accelerators” checkbox.
+
+  Then, in xfce4-terminal, you can select a menu entry, then press the
+  relevant key to bind it directly, or press backspace to delete the
+  accelerator.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 28 Jun 2013 21:58:07 +0200

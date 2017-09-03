@@ -1,0 +1,32 @@
+Source: xfce4-terminal
+Section: xfce
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>,
+           Lionel Le Folgoc <mrpouit@gmail.com>
+Build-Depends: chrpath,
+               debhelper (>= 9),
+               intltool,
+               libglib2.0-dev (>= 2.26),
+               libgtk-3-dev (>= 3.16),
+               libstartup-notification0-dev,
+               libvte-2.91-dev,
+               libxfce4ui-2-dev (>= 4.10),
+               libxml-perl
+Standards-Version: 4.0.0
+Homepage: http://goodies.xfce.org/projects/applications/terminal
+Vcs-Svn: svn://anonscm.debian.org/pkg-xfce/desktop/trunk/xfce4-terminal/
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-xfce/desktop/trunk/xfce4-terminal/
+
+Package: xfce4-terminal
+Architecture: any
+Depends: exo-utils, ${misc:Depends}, ${shlibs:Depends}
+Provides: x-terminal-emulator
+Recommends: default-dbus-session-bus | dbus-session-bus
+Description: Xfce terminal emulator
+ This package contains Terminal, which is a lightweight and easy to use
+ terminal emulator for X11. It was created to fit nicely into the Xfce
+ desktop environment, but it also fits nice with other environments.
+ .
+ For people who already know GNOME 2 terminal and are searching for a
+ lighter but comparable replacement, Terminal might be the answer.

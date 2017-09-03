@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+# remove alternatives links
+
+if [ "$1" = "remove" ]; then
+  update-alternatives --remove x-terminal-emulator /usr/bin/xfce4-terminal.wrapper
+fi
+
+#DEBHELPER#
+
+exit 0
