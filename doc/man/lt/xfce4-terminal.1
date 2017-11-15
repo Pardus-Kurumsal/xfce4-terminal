@@ -1,0 +1,347 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- Terminalo emuliatorius skirtas X
+.SH "SANTRAUKA"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [PARINKTIS...]
+.SH "APRAŠYMAS"
+.PP
+xfce4\-terminal tai yra tai kas žinoma kaip X terminalo emuliatorius, dažnai pavadinama \(Bqterminalu\(lq ar \(Bqshell\(lq\&. Tai suteikia seno tekstinio ekrano atitikmenį, bet šis gali lengvai dalintis ekranu su kitomis programomis\&. Windows naudotojai jau turbūt pažįstami su MS\-DOS įrankiu, kuris suteikia tą patį funkcionalumą DOS komandinės eilutės programoms Windows terpėje, UNIX CLI turi daugiau galimybių ir lengviau valdomas nei DOS\&.
+.PP
+xfce4\-terminal emuliuoja
+xterm
+programą, kurią sukūrė X konsorciumas\&.
+xterm
+programa emuliuoja DEC VT102 terminalą taipogi palaiko DEC VT220 \(Bqescape sequences\(lq\&. \(Bqescape sequence\(lq yra simbolių seka kurie prasideda simboliu
+Esc\&. xfce4\-terminal priima visas \(Bqescape sequences\(lq sekas kurias naudoja VT102 ir VT220 terminalai, tokioms funkcijoms kaip žymeklio pozicionavimas ar ekrano išvalymas\&.
+.SH "PARINKTYS"
+.SS "Parinkčių santrauka"
+.PP
+Štai visų parinkčių santrauka, sugrupuota pagal tipą\&. Paaiškinimai pateikiame sekcijose\&.
+.PP
+Bendros parinktys
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIekranas\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIaplankas\fR\fR
+.RE
+.PP
+Langų ar kortelių skirtukai
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Kortelių parinktys
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIaplankas\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Langų parinktys
+.RS 4
+\fB\-\-display=\fR\fB\fIekranas\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIgeometrija\fR\fR;
+\fB\-\-role=\fR\fB\fIvaidmuo\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIeilutė\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIpiktograma\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Bendros parinktys"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Įvairių komandinės eilutės parinkčių sąrašas kurias palaiko xfce4\-terminal ir išeina
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Rodyti versijos informaciją ir išeiti
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Neregistruoti su D\-BUS seanso pranešimo magistrale
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIekranas\fR\fR
+.RS 4
+Numatytasis X ekranas\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIaplankas\fR\fR
+.RS 4
+Nustatyti
+\fIaplanką\fR
+kaip numatytąjį terminalo darbinį aplanką
+.RE
+.SS "Langų ar kortelių skirtukai"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Atverti naują kortelę paskutiniame nurodytame lange; gali būti nurodyta ir daugiau parinkčių\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Atverti naują langą turintį vieną kortelę; gali būti nurodyta ir daugiau parinkčių\&.
+.RE
+.SS "Kortelių parinktys"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Vykdyti komandinės eilutės likutį terminale
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR
+.RS 4
+Vykdyti
+\fIkomanda\fR
+terminale
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIaplankas\fR\fR
+.RS 4
+Nustatyti
+\fIaplanką\fR
+kaip numatytąjį terminalo darbinį aplanką
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR
+.RS 4
+Nustatyti
+\fIpavadinimą\fR
+kaip pradinį terminalo lango pavadinimą
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Neleidžia terminalui užsidaryti kai antrinis procesas nutraukiamas
+.RE
+.SS "Langų parinktys"
+.PP
+\fB\-\-display=\fR\fB\fIekranas\fR\fR
+.RS 4
+X ekranas paskutiniam nurodytam langui\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIgeometrija\fR\fR
+.RS 4
+Nustato geometriją paskutiniam nurodytam langui
+\fIgeometrija\fR\&. Skaitykite
+\fBX\fR(7)
+norėdami sužinoti daugiau apie lango geometriją\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIvaidmuo\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIeilutė\fR\fR
+.RS 4
+Nustato paleidimo pranešimo id paskutiniam nurodytam langui\&. Naudojama viduje, paleidimo pranešimo id perdavimui naudojant D\-BUS tarnybą\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIpiktograma\fR\fR
+.RS 4
+Nustatyti terminalo piktogramą kaip piktogramos vardą ar failo vardą\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Nustatyti paskutinį nurodytą langą viso ekrano režimu; taikoma tik vienam langui; gali būti nurodyta tik vienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Nustatyti paskutinį nurodytą langą išdidintu režimu; taikoma tik vienam langui; gali būti nurodyta tik vienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Paskutiniam nurodytam langui įjungti meniu juostą\&. Gali būti nurodyta kiekvienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Paskutiniam nurodytam langui išjungti meniu juostą\&. Gali būti nurodyta kiekvienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Įjungti lango dekoracijas paskutiniam nurodytam langui\&. Taikoma tik vienam langui\&. Gali būti nurodyta kartą kiekvienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+IŠjungti lango dekoracijas paskutiniam nurodytam langui\&. Taikoma tik vienam langui\&. Gali būti nurodyta kartą kiekvienam langui sukurtam iš komandinės eilutės\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "PAVYZDžIAI"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Atveria terminalo langą su 80 stulpelių ir 40 eilučių dydžiu bei dvejomis kortelėmis, pirma kortelė vykdo
+\fBmutt\fR, o antra command>mc
+.RE
+.SH "APLINKA"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+Pirmas bazinis aplankas kuriame ieškoti konfigūracijos failų\&. Pagal nutylėjimą nustatyta
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+Dvitaškiu atskirtas aplankų sąrašas kuriuose yra konfigūracijos duomenys\&. Pagal nutylėjimą programa ieškos
+${sysconfdir}/xdg/\&.
+\fI${sysconfdir}\fR
+reikšmė priklauso nuo to kaip programa buvo sukurta ir sukompiliuotose programose dažniausiai būna
+/etc/\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+Šakninis dialogas visiems naudotojo nurodytiems duomenims\&. Pagal nutylėjimą nustatyta
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+Nustatymų rinkinys pagal kuriuos turėtų būti ieškoma duomenų failų, pagal
+\fI${XDG_DATA_HOME}\fR\&. Aplankai turėtų būti atskirti dvitaškiu\&.
+.RE
+.SH "FAILAI"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Tai yra konfigūracijos failo, kuriame yra xfce4\-terminal valdymo ir išvaizdos nustatymai, vieta\&.
+.RE
+.SH "TAIP PAT žIūRėKITE"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Kūrėjas
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Kūrėjas
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Programinės įrangos kūrėjas, os\-cillation, Sistemos kūrimas, 
+.RS 4
+Kūrėjas
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

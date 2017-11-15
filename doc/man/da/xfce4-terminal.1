@@ -1,0 +1,346 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- En terminalemulator til X
+.SH "INDHOLDSFORTEGENELSE"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [TILVALG...]
+.SH "BESKRIVELSE"
+.PP
+xfce4\-terminal er en terminalemulator til X, ofte kaldet terminal eller skal\&. Den tilbyder funktioner tilsvarende den gammeldags tekstskærm på dit skrivebord, men kan sagtens dele skærmen med andre grafiske programmer\&. Windowsbrugere er måske allerede bekendt med programmet MS\-DOS\-kommandoprompt, som tilbyder en DOS\-kommandolinje under Windows, dog skal det siges at CLI under UNIX tilbyder langt større funktionalitet og brugervenlighed end DOS gør\&.
+.PP
+xfce4\-terminal emulerer
+xterm\-programmet, udviklet af X Consortium\&. Til gengæld emulerer
+xterm\-programmet terminalen DEC VT102 og understøtter også escape\-sekvenserne fra DEC VT220\*(Aqeren\&. En escape\-sekvens er en serie af tegn der starter med
+Esc\-tegnet\&. xfce4\-terminal accepterer alle de escape\-sekvenser som terminalerne VT102 og VT220 bruger som funktioner, så som placering af markøren og rydning af skærmen\&.
+.SH "INDSTILLINGER"
+.SS "Indstillingsoversigt"
+.PP
+Her er en oversigt over alle tilvalg, grupperet efter type\&. Forklaringer findes i de følgende sektioner\&.
+.PP
+Generelle indstillinger
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIskærm\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fImappe\fR\fR
+.RE
+.PP
+Vindues\- eller fanebladsadskillere
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Fanebladsindstillinger
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fImappe\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Indstillinger til vindue
+.RS 4
+\fB\-\-display=\fR\fB\fIskærm\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIgeometri\fR\fR;
+\fB\-\-role=\fR\fB\fIrolle\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIstreng\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIikon\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Generelle indstillinger"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Viser de forskellige kommandolinjetilvalg understøttet af xfce4\-terminal og afslutter
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Viser versionsinformation og afslutter
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Registrér ikke med D\-BUS\-sessionsbeskedbussen
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIskærm\fR\fR
+.RS 4
+Brug som standard X\-skærm\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fImappe\fR\fR
+.RS 4
+Indstil
+\fIdirectory\fR
+som standardarbejdsmappen for terminalen
+.RE
+.SS "Vindues\- eller fanebladsadskillere"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Åbn et nyt faneblad i det sidst specificerede vindue\&. Mere end ét af disse tilvalg kan bruges\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Åbn et nyt vindue der indeholder ét faneblad\&. Mere end ét af disse tilvalg kan bruges\&.
+.RE
+.SS "Fanebladsindstillinger"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Udfør resten af kommandolinjen inden i terminalen
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR
+.RS 4
+Udfør
+\fIkommando\fR
+inde i terminalen
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fImappe\fR\fR
+.RS 4
+Indstil
+\fImappe\fR
+som arbejdsmappen for terminalen
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR
+.RS 4
+Indstil
+\fItitel\fR
+som indledende vinduestitel i terminalen
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Gør at terminalen holdes åben efter at den underliggende kommando er udført
+.RE
+.SS "Indstillinger til vindue"
+.PP
+\fB\-\-display=\fR\fB\fIskærm\fR\fR
+.RS 4
+X\-skærm som bruges til det sidst definerede vindue\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIgeometri\fR\fR
+.RS 4
+Indstil geometrien af det sidst specificerede vindue til
+\fIgeometry\fR\&. Læs
+\fBX\fR(7)
+for flere detaljer om hvordan man skal angive vinduesgeometri\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIrolle\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIstreng\fR\fR
+.RS 4
+Angiv id\*(Aqet for opstartsnotifikation for det sidste specificerede vindue\&. Brugt internt til at videresende opstartsnotifikation\-id\*(Aqet, ved brug af D\-BUS\-tjenesten\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIikon\fR\fR
+.RS 4
+Indstil terminalens ikon som et ikon\- eller filnavn\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Indstil det sidst specificerede vindue, til fuldskærmstilstand; det gælder kun for et vindue; kan specificeres en gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Indstil det sidst specificerede vindue, til maksimeret tilstand; det gælder kun for et vindue; kan specificeres en gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Slå menulinjen til for det sidst specificerede vindue\&.\&. Det kan specificeres en gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Slå menulinjen til for det sidst angivne vindue\&.\&. Det kan angives én gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Slå vinduesdekorationer til, for det sidst specificerede vindue\&. Gælder kun for et vindue\&. Det kan specificeres en gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Slå vinduesdekorationer fra, for det sidst specificerede vindue\&. Gælder kun for et vindue\&. Det kan specificeres en gang for hvert vindue, du opretter fra kommandolinjen\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "EKSEMPLER"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Åbner et nyt terminalvindue med geometri 80 kollonner og 40 rækker og to faneblade , Hvor det første faneblad kører
+\fBmutt\fR
+og det andet faneblad kører
+\fBmc\fR\&.
+.RE
+.SH "MILJø"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+Den første basale mappe til at lede efter indstillingsfiler\&. Som standard er denne indstillet til
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+En kolonsepareret liste af basismapper der indeholder indstillingsdata\&. Som standard vil programmet lede i
+${sysconfdir}/xdg/\&. Værdien på
+\fI${sysconfdir}\fR, afhænger hvordan programmet blev bygget og vil ofte være
+/etc/
+for binære pakker\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+Roden for alle brugerspecikke datafiler\&. Som standard er denne indstillet til
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+En række indstillingssortereret basismapper, relativ til hvilke datafiler der skal søges efter, udover basismappen ${XDG_DATA_DIRS}\&. Mapper skal separeres med en kolon\&.
+.RE
+.SH "FILER"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Dette er placeringen af indstillingsfilerne, der inkluderer de indstillinger, der styrer udseendet og fornemmelsen i xfce4\-terminal\&.
+.RE
+.SH "LæS OGSå"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Udvikler
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Udvikler
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Softwareudvikler, os\-cillation, Systemudvikling, 
+.RS 4
+Udvikler
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

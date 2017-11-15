@@ -1,0 +1,349 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- بۇ X دىكى تېرمىنال تەقلىدلىگۈ
+.SH "SYNOPSIS"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [OPTION...]
+.SH "چۈشەندۈرۈلۈشى"
+.PP
+xfce4\-terminal is what is known as an X terminal emulator, often referred to as terminal or shell\&. It provides an equivalent to the old\-fashioned text screen on your desktop, but one which can easily share the screen with other graphical applications\&. Windows users may already be familiar with the MS\-DOS Prompt utility, which has the analogous function of offering a DOS command\-line under Windows, though one should note that the UNIX CLI offer far more power and ease of use than does DOS\&.
+.PP
+xfce4\-terminal emulates the
+xterm
+application developed by the X Consortium\&. In turn, the
+xterm
+application emulates the DEC VT102 terminal and also supports the DEC VT220 escape sequences\&. An escape sequence is a series of characters that start with the
+Esc
+character\&. xfce4\-terminal accepts all of the escape sequences that the VT102 and VT220 terminals use for functions such as to position the cursor and to clear the screen\&.
+.SH "تاللانما"
+.SS "تاللانما ئۈزۈندىسى"
+.PP
+بارلىق تاللانمىلارنىڭ ئۈزۈندىسى بۇ يەردە گۇرۇپپىلار بويىچە كۆرسىتىلگەن بولۇپ، ئۇلارنىڭ چۈشەندۈرۈلۈشى كېيىنكى بۆلەكتە بار\&.
+.PP
+ئادەتتىكى تاللانمىلار
+.RS 4
+\fB\-h\fR، \fB\-\-help\fR;
+\fB\-V\fR، \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIكۆرسەتكۈچ\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIمۇندەرىجە\fR\fR
+.RE
+.PP
+كۆزنەك ياكى بەتكۈچ ئايرىغۇ
+.RS 4
+\fB\-\-tab\fR؛
+\fB\-\-window\fR
+.RE
+.PP
+بەتكۈچ تاللانمىلىرى
+.RS 4
+\fB\-x\fR، \fB\-\-execute\fR؛
+\fB\-e\fR، \fB\-\-command=\fR\fB\fIبۇيرۇق\fR\fR؛
+\fB\-\-working\-directory=\fR\fB\fIمۇندەرىجە\fR\fR؛
+\fB\-T\fR، \fB\-\-title=\fR\fB\fIماۋزۇ\fR\fR;
+\fB\-H\fR، \fB\-\-hold\fR
+.RE
+.PP
+كۆزنەك تاللانمىلىرى
+.RS 4
+\fB\-\-display=\fR\fB\fIكۆرسەتكۈچ\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIشەكلى\fR\fR;
+\fB\-\-role=\fR\fB\fIرولى\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIتېكىست\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIسىنبەلگە\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "ئادەتتىكى تاللانمىلار"
+.PP
+\fB\-h\fR، \fB\-\-help\fR
+.RS 4
+xfce4\-terminal دا ئىشلەتكىلى بولىدىغان ھەر خىل بۇيرۇق قۇرى تاللانمىلىرىنى كۆرسىتىپ چېكىنىدۇ
+.RE
+.PP
+\fB\-V\fR، \fB\-\-version\fR
+.RS 4
+نەشر ئۇچۇرنى كۆرسىتىپ چېكىنىدۇ
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+D\-BUS ئەڭگىمە ئۇچۇر باش لىنىيىسى بىلەن خەتلەتمە
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIكۆرسەتكۈچ\fR\fR
+.RS 4
+ئىشلىتىدىغان كۆڭۈلدىكى X كۆرسەتكۈچى\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIمۇندەرىجە\fR\fR
+.RS 4
+\fIمۇندەرىجە\fR
+نى تېرمىنالنىڭ كۆڭۈلدىكى خىزمەت مۇندەرىجىسى قىلىپ بەلگىلە
+.RE
+.SS "كۆزنەك ياكى بەتكۈچ ئايرىغۇ"
+.PP
+\fB\-\-tab\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكتە يېڭى بەتكۈچ ئاچ\&. بىردىن جىق تاللانمىلارنى كۆرسەتكىلى بولىدۇ\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+بىر بەتكۈچنى ئوز \-چىگە ئالغان يېڭى كۆزنەك ئاچ\&. بىردىن جىق تاللانمىلارنى كۆرسەتكىلى بولىدۇ\&.
+.RE
+.SS "بەتكۈچ تاللانمىلىرى"
+.PP
+\fB\-x\fR، \fB\-\-execute\fR
+.RS 4
+بۇيرۇق قۇرى ئەسلەتمىسىنى تېرمىنال ئىچىدە ئىجرا قىلسۇن
+.RE
+.PP
+\fB\-e\fR، \fB\-\-command=\fR\fB\fIبۇيرۇق\fR\fR
+.RS 4
+\fIبۇيرۇق\fR
+نى تېرمىنال ئىچىدە ئىجرا قىل
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIمۇندەرىجە\fR\fR
+.RS 4
+\fIمۇندەرىجە\fR
+نى تېرمىنالنىڭ خىزمەت مۇندەرىجىسى قىلىپ بېكىت
+.RE
+.PP
+\fB\-T\fR، \fB\-\-title=\fR\fB\fIماۋزۇ\fR\fR
+.RS 4
+\fIماۋزۇ\fR
+نى تېرمىنالنىڭ كۆڭۈلدىكى كۆزنەك ماۋزۇسى قىلىپ ئىشلەت
+.RE
+.PP
+\fB\-H\fR، \fB\-\-hold\fR
+.RS 4
+Causes the terminal to be kept around after the child command has terminated
+.RE
+.SS "كۆزنەك تاللانمىلىرى"
+.PP
+\fB\-\-display=\fR\fB\fIكۆرسەتكۈچ\fR\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكتە ئىشلىتىلىدىغان X ئېكرانى\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIشەكلى\fR\fR
+.RS 4
+Sets the geometry of the last\-specified window to
+\fIgeometry\fR\&. Read
+\fBX\fR(7)
+for more information on how to specify window geometries\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIرولى\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIتېكىست\fR\fR
+.RS 4
+Specifies the startup notification id for the last\-specified window\&. Used internally to forward the startup notification id when using the D\-BUS service\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIسىنبەلگە\fR\fR
+.RS 4
+تېرمىنالنىڭ سىنبەلگىسىنى سىنبەلگە ئاتى ياكى ھۆججەت ئاتى سۈپىتىدە ئىشلەت\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنى تولۇق ئېكران ھالىتىدە ئىشلەت؛ پەقەت بىرلا كۆزنەككە ئىشلىتىشكە بولىدۇ؛ بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنى ئەڭ چوڭ ھالەتتە ئىشلەت؛ پەقەت بىرلا كۆزنەككە ئىشلىتىشكە بولىدۇ؛ بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنىڭ تىزىملىك بالدىقىنى كۆرسەت\&. بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنىڭ تىزىملىك بالدىقىنى كۆرسەتمە\&. بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنىڭ گىرۋەك بېزەكلىرىنى كۆرسەت؛ پەقەت بىرلا كۆزنەككە ئىشلىتىشكە بولىدۇ؛ بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+ئەڭ ئاخىرقى بەلگىلەنگەن كۆزنەكنىڭ گىرۋەك بېزەكلىرىنى كۆرسەتمە؛ پەقەت بىرلا كۆزنەككە ئىشلىتىشكە بولىدۇ؛ بۇيرۇق قۇرىدا قۇرۇلغان ھەر بىر كۆزنەككە بىرلا قېتىم بېكىتىشكە بولىدۇ\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "مىساللار"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+40 قۇرى، ھەر بىر قۇردا 80 ھەرپ كۆرسەتكىلى بولىدىغان، ئىككى دانە بەتكۈچى بار بولغان تېرمىنال كۆزنىكىنى يېڭىدىن ياسايدۇ\&. بىرىنچى بەتكۈچتە
+\fBmutt\fR
+بۇيرۇقى، ئىككىنچى بەتكۈچتە
+\fBmc\fR
+بۇيرۇقى ئىجرا قىلىنىدۇ\&.\(em
+.RE
+.SH "مۇھىت"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+سەپلىمە ھۆججەتنى ئىزدەيدىغان تۇنجى ئاساسىي مۇندەرىجە\&. ئادەتتە ئۇنىڭ قىممىتى
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+A colon separated list of base directories that contain configuration data\&. By default the application will look in
+${sysconfdir}/xdg/\&. The value of
+\fI${sysconfdir}\fR
+depends on how the program was build and will often be
+/etc/
+for binary packages\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+ئىشلەتكۈچىگە تەۋە بارلىق سانلىق\-مەلۇماتلارنىڭ غول يولى\&. كۆڭۈلدىكى قىممىتى
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+A set of preference ordered base directories relative to which data files should be searched in addition to the
+\fI${XDG_DATA_HOME}\fR
+base directory\&. The directories should be separated with a colon\&.
+.RE
+.SH "ھۆججەتلەر"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+بۇ xfce4\-terminal نىڭ كۆرۈنۈشىنى كونترول قىلىدىغان خاسلىقلارنى ئوز ئىچىدە ئالغان سەپلىمە ھۆججەتنىڭ ئورنىدۇر\&.
+.RE
+.SH "بۇ يەرگىمۇ قاراپ بېقىڭ"
+.PP
+\fBbash\fR(1)،
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+ئىجادىيەتچى
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+ئىجادىيەتچى
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+يۇمشاق دېتال ئىجادىيىتى, os\-cillation, سىستېما ئىجادىيىتى, 
+.RS 4
+ئىجادىيەتچى
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

@@ -1,0 +1,349 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- Emulador de terminal per a X
+.SH "SINOPSI"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [OPCIÓ...]
+.SH "DESCRIPCIó"
+.PP
+xfce4\-terminal és el que es coneix com un emulador de terminal X, sovint anomenat tambè com a terminal o intèrpret d\*(Aqordres (shell)\&. Aquest us ofereix un equivalent a la pantalla de text tradicional per el vostre escriptori, però en el que podreu compartir la pantalla amb altres aplicacions gràfiques\&. Els usuaris de Windows pot ser que ja estigueu familiaritzats amb la utilitat de la finestra de MS\-DOS, que te funcions anàlogues a les de la línia d\*(Aqordres de DOS a Windows, encara que cal remarcar que la CLI UNIX és molt més potent i fàcil d\*(Aqemprar que la de DOS\&.
+.PP
+xfce4\-terminal emula l\*(Aqaplicació
+xterm
+desenvolupada per X Consortium\&. A la vegada, l\*(Aqaplicació
+xterm
+emula el terminal DEC VT102 i també és compatible amb les seqüències d\*(Aqescapada de DEC VT220\&. Una seqüència d\*(Aqescapada és una sèrie de caràcters que s\*(Aqinicien amb el caràcter
+Esc\&. xfce4\-terminal accepta totes les seqüències d\*(Aqescapada dels terminals VT102 i VT220 que s\*(Aqempren per funcions com per posicionar el cursor o netejar la pantalla\&.
+.SH "OPCIONS"
+.SS "Resum d\*(Aqopció"
+.PP
+Aquí hi ha un resum de totes les opcions agrupades per tipus\&. Les explicacions són a les properes seccions\&.
+.PP
+Opcions generals
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIdisplay\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIdirectori\fR\fR
+.RE
+.PP
+Separadors de finestra o pestanya
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Opcions de pestanya
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcomanda\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIdirectori\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItítol\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Opcions de finestra
+.RS 4
+\fB\-\-display=\fR\fB\fIdisplay\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIgeometria\fR\fR;
+\fB\-\-role=\fR\fB\fIrol\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIcadena de caràcters\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIicona\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Opcions generals"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Llista les opcions de la línia de comandes suportades per xfce4\-terminal i surt\&.
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Mostra informació sobre la versió i surt
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+No es registra amb el bus de sessions de D\-BUS
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIdisplay\fR\fR
+.RS 4
+Pantalla X per usar per defecte\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIdirectori\fR\fR
+.RS 4
+Estableix
+\fIdirectori\fR
+com el directori de treball per al terminal
+.RE
+.SS "Separadors de finestra o pestanya"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Obre una nova pestanya en la finestra especificada; es pot indicar més d\*(Aquna de les opcions que hi ha tot seguit\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Obre una finestra que conté una pestanya; es pot emprar més d\*(Aquna d\*(Aqaquestes opcions\&.
+.RE
+.SS "Opcions de pestanya"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Executa el recordatori de la línia de comandes dins el terminal
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcomanda\fR\fR
+.RS 4
+Executa
+\fIcomanda\fR
+dins el terminal
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIdirectori\fR\fR
+.RS 4
+Estableix
+\fIdirectori\fR
+com el directori de treball per al terminal
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItítol\fR\fR
+.RS 4
+Estableix
+\fItítol\fR
+com el títol inicial de la finestra del terminal
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Causa que el terminal es mantingui encara que la comanda executada hagi acabat
+.RE
+.SS "Opcions de finestra"
+.PP
+\fB\-\-display=\fR\fB\fIdisplay\fR\fR
+.RS 4
+Pantalla X per a usar per a l\*(Aqúltima finestra especificada\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIgeometria\fR\fR
+.RS 4
+Estableix la geometria de la nova finestra a
+\fIgeometria\fR\&. Llegiu
+\fBX\fR(7)
+per a obtenir més informació de com especificar geometries de finestra\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIrol\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIcadena de caràcters\fR\fR
+.RS 4
+Especifica la identificació de notificacions d\*(Aqinici per a l\*(Aqúltima finestra especificada\&. S\*(Aqempra internament per a re\-enviar la notificació d\*(Aqinici quan s\*(Aqusa el servei D\-BUS\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIicona\fR\fR
+.RS 4
+Estableix la icona del terminal com a nom d\*(Aqicona o nom de fitxer\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+L\*(Aqúltima finestra especificada es posa en mode de pantalla completa; s\*(Aqaplica un cop per finestra\&. Es pot especificar per cadascuna de les finestres des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+L\*(Aqúltima finestra especificada es posa en mode maximitzat; s\*(Aqaplica un cop per finestra\&. Es pot especificar per cadascuna de les finestres des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Mostra la barra del menú per a la finestra especificada en darrer terme\&. Es pot especificar un cop per cadascuna de les finestres creades des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Oculta la barra del menú per a la finestra especificada en darrer terme\&. Es pot especificar un cop per cadascuna de les finestres creades des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Mostra les decoracions de la finestra per a la finestra especificada en darrer terme\&. S\*(Aqaplica un cop per finestra\&. Es pot especificar un cop per cadascuna de les finestres que es creen des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Oculta les decoracions de la finestra per a la finestra especificada en darrer terme\&. S\*(Aqaplica un cop per finestra\&. Es pot especificar un cop per cadascuna de les finestres que es creen des de la línia de comandes\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "EXEMPLES"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Obre una nova finestra de terminal amb mida de 80 columnes i 40 files amb dos pestanyes, on la primera executarà
+\fBmutt\fR
+i la segona executarà
+\fBmc\fR\&.
+.RE
+.SH "ENTORN"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+El directori base per on buscar fitxers de configuració\&. Per defecte és
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+Una llista de directoris base separades pel caràcter dos punts que contenen les dades de configuració\&. Per defecte, l\*(Aqaplicació mirarà a
+${sysconfdir}/xdg/\&. El valor
+\fI${sysconfdir}\fR
+depèn de com s\*(Aqha escrit el programa i sovint serà
+/etc/\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+L\*(Aqarrel per a tots els fitxers de dades específics de l\*(Aqusuari\&. Per defecte és
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+Un conjunt ordenat de directoris base a partir dels quals es buscaran els fitxers de dades a més del directori base
+\fI${XDG_DATA_HOME}\fR\&. Els directoris s\*(Aqhan de separar mitjançant el caràcter dos punts\&.
+.RE
+.SH "FITXERS"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Aquesta és la localització del fitxer de configuració que inclou les preferències que controlen l\*(Aqaparença de xfce4\-terminal\&.
+.RE
+.SH "VEIEU A MéS"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Developer
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Developer
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Desenvolupador de programari, os\-cillation, Desenvolupament de sistemes, 
+.RS 4
+Developer
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

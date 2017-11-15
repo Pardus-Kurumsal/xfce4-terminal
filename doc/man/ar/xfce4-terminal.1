@@ -1,0 +1,351 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: إكسفس
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "إكسفس"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- محاكي طرفية X
+.SH "موجز"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [خيارات...]
+.SH "وصف"
+.PP
+xfce4\-terminal ما يعرف باسم محاكي طرفية x، كثيرا ما يشار إلى المحطة الطرفية أو shell\&. وهو يوفر ما يشبه الشاشة القديمة للنص على سطح المكتب، ويمكن بسهولة مشاركة الشاشة مع التطبيقات الرسومية الأخرى\&. لمستخدمي Windows قد يشبه ذلك موجه MS\-DOS، الذي له وظيفة مماثلة لتقدم سطر أوامر تحت Windows، وينبغي ملاحظة أن مؤشرها UNIX تقدم أكثر بكثير من حيث السهولة والإمكانات من DOS\&.
+.PP
+xfce4\-terminal يحاكي تطبيق
+xterm
+المطورة من قبل اتحاد X\&. ,تطبيق
+xterm
+بدوره يحاكي المحطة الطرفية DEC VT102، ويدعم أيضا سلسلة الهروب DEC VT220\&. سلسلة الهروب هي سلسلة من الأحرف التي تبدأ بمفتاح الهروب
+Esc
+character\&. xfce4\-terminal يقبل كل من تسلسلات الهروب التي تستخدم محطات VT102 و VT220 لمهام مثل وضع المؤشر ومسح الشاشة\&.
+.SH "خيارات"
+.SS "ملخص الخيار"
+.PP
+هنا ملخص لجميع الخيارات ، مجمعة حسب النوع\&. التفسيرات في المقاطع التالية\&.
+.PP
+خيارات عامة
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-default\-display=\fR\fB\fIعرض\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIمجلد\fR\fR
+.RE
+.PP
+فواصل النافذة أو التبويب
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+تبويب الخيارات
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIأمر\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIمجلد\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIعنوان\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+نافذة الخيارات
+.RS 4
+\fB\-\-display=\fR\fB\fIعرض\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIالهندسة\fR\fR;
+\fB\-\-role=\fR\fB\fIالدّور\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIسلسلة\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIأيقونة\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "خيارات عامة"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+قائمة سطر الأوامر لمختلف الخيارات المدعومة منطرف xfce4\-terminal و الخروج
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+عرض معلومات الإصدار والخروج
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+عدم التسجيل مع جلسة رسالة D\-BUS
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+ترديد شفرة الالوان
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIعرض\fR\fR
+.RS 4
+X العرض الافتراضي لاستخدام\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIمجلد\fR\fR
+.RS 4
+تحديد
+\fIمجلد\fR
+كمجلد عمل إفتراضي للطرفية
+.RE
+.SS "فواصل النافذة أو التبويب"
+.PP
+\fB\-\-tab\fR
+.RS 4
+فتح علامة تبويب جديدة في آخر إطار محدد، يتوفر عدة خيارات اخرى\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+فتح نافذة جديدة تحتوي على علامة تبويب واحدة، يتوفر عدة خيارات اخرى\&.
+.RE
+.SS "تبويب الخيارات"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+تنفيذ ما تبقى من سطر الأوامر داخل الطرفية
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIأمر\fR\fR
+.RS 4
+تنفيذ
+\fIأمر \fR
+داخل الطرفية
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIمجلد\fR\fR
+.RS 4
+تحديد
+\fIمجلد\fR
+كمجلد لعمل الطرفية الحالي
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIعنوان\fR\fR
+.RS 4
+تحديد
+\fIعنوان\fR
+كعنوان الإطار الأولي للطرفية
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+يسبب إبقاء الطرفية حولها بعد إنهاء الأمر البنيوي
+.RE
+.SS "نافذة الخيارات"
+.PP
+\fB\-\-display=\fR\fB\fIعرض\fR\fR
+.RS 4
+عرض لاستخدام X في الإطار المحدد الأخير\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIالهندسة\fR\fR
+.RS 4
+يعين هندسة الإطار المحدد الأخير
+\fIالهندسة\fR\&. قراءة
+\fBX\fR(7)
+لمزيد من المعلومات حول كيفية تحديد إطار هندستها\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIالدّور\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIسلسلة\fR\fR
+.RS 4
+تحدد معرف تنبيه بدء تشغيل خاص بآخر إطار\&. تستخدم داخليا لإعادة توجيه معرف تنبيه بدء التشغيل عند استخدام خدمة D\-BUS\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIأيقونة\fR\fR
+.RS 4
+تعيين أيقونة الطرفية كأيقونة أو اسم الملف\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+تعيين الإطار المحدد الأخير في وضع ملء الشاشة؛ ينطبق على إطار واحد فقط؛ يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاءه من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+تعيين الإطار المحدد الأخير في وضع تكبير؛ ينطبق على إطار واحد فقط؛ يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاءه من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+قم بتشغيل شريط القوائم للإطار المحدد الأخير\&. يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاء من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+قم بإغلاق شريط القوائم للإطار المحدد الأخير\&. يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاء من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+قم بتشغيل التزيين لنافذة الإطار المحدد الأخير\&. وينطبق على إطار واحد فقط\&. يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاء من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+قم بإيقاف التزيين لنافذة الإطار المحدد الأخير\&. وينطبق على إطار واحد فقط\&. يمكن تحديد مرة واحدة لكل إطار تقوم بإنشاء من سطر الأوامر\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "أمثلة"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+يفتح إطار محطة طرفية جديدة مع هندسة 80 الأعمدة والصفوف 40 بعلامتي تبويب، حيث يعمل على علامة التبويب الأولى
+\fBالمغفل\fR
+وعلامة التبويب الثاني
+\fBmc\fR\&.
+.RE
+.SH "بيئة"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+المجلد اﻷول قاعدة للبحث عن ملفات إعداد\&. بشكل افتراضي يتم تعيين هذا إلى
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+فاصلة تفصل قائمة الدلائل الأساسية التي تحتوي على بيانات الإعداد\&. بشكل افتراضي سيبدو التطبيق في
+${sysconfdir}/xdg/\&. قيمة
+\fI${sysconfdir}\fR
+يعتمد على كيف كان بناء البرنامج وغالباً ما يكون
+/etc/
+للمجموعات ثنائية\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+الجذرية لكافة ملفات البيانات الخاصة بالمستخدم\&. بشكل افتراضي يتم تعيين هذا إلى
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+مجموعة من أوامر التفضيلات تستند لقاعدة المجلدات التي تحدد أي ملفات البيانات التي يجب البحث عنها بالإضافة إلى
+\fI${XDG_DATA_HOME}\fR
+\&. يجب فصل الدلائل بنقطتين\&.
+.RE
+.SH "الملفات"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+هذا موقع ملف الإعداد الذي يتضمن الأفضليات التي تتحكم في المظهر xfce4\-terminal\&.
+.RE
+.SH "انظر أيضا"
+.PP
+\fBصدفة\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+مطور
+.RE
+.PP
+\fBالكنية Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+مطور
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+مطور برامج, os\-cillation, تطوير النظام, 
+.RS 4
+مطور
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

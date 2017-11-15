@@ -1,0 +1,348 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- Emulator terminal untuk X
+.SH "SINOPSIS"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [OPSI...]
+.SH "KETERANGAN"
+.PP
+xfce4\-terminal adalah apa yang dikenal sebagai emulator terminal X, sering disebut sebagai terminal atau shell\&. Terminal menyediakan pengganti untuk layar teks bergaya lama di desktop anda, namun dapat dengan mudah berbagi layar dengan aplikasi grafis lainnya\&. Pengguna Windows mungkin telah familier dengan utilitas MS\-DOS, yang memiliki fungsi analog dalam menawarkan baris perintah DOS di dalam Windows, meskipun perlu diingat bahwa CLI UNIX menawarkan kemampuan yang lebih besar dan kemudahan yang lebih dalam hal penggunaan dibanding DOS\&.
+.PP
+xfce4\-terminal mengemulasi aplikasi
+xterm
+yang dikembangkan oleh X Consortium\&. Sebaliknya, aplikasi
+xterm
+mengemulasikan terminal DEC VT102 dan juga mendukung sekuensi keluar DEC VT220\&. Sekuensi keluar adalah rangkaian karakter yang dimulai dengan karakter
+Esc\&. xfce4\-terminal menerima semua sekuensi keluar yang terminal VT102 dan VT220 gunakan untuk fungsi\-fungsi seperti meletakkan kursor dan untuk membersihkan layar\&.
+.SH "OPSI"
+.SS "Ringkasan Opsi"
+.PP
+Di sini adalah ringkasan untuk semua opsi, dikelompokkan berdasarkan tipe\&. Penjelasannya di bagian berikut\&.
+.PP
+Opsi umum
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fItampilan\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIdirektori\fR\fR
+.RE
+.PP
+Pemisah Jendela atau Tab
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Opsi Tab
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIperintah\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIdirektori\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIjudul\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Opsi Jendela
+.RS 4
+\fB\-\-display=\fR\fB\fItampilan\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIgeometri\fR\fR;
+\fB\-\-role=\fR\fB\fIperan\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fItali\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIikon\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Opsi umum"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Tampilkan berbagai opsi baris perintah yang didukung oleh xfce4\-terminal lalu keluar
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Tampilkan informasi versi dan keluar
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Jangan daftarkan dengan bus pesan sesi D\-BUS
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Munculkan kode warna
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fItampilan\fR\fR
+.RS 4
+Tampilan X standar untuk digunakan\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIdirektori\fR\fR
+.RS 4
+Atur
+\fIdirektori\fR
+sebagai direktori kerja standar untuk terminal
+.RE
+.SS "Pemisah Jendela atau Tab"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Buka tab baru di jendela yang ditentukan terakhir; lebih dari satu opsi seperti ini dapat diberikan\&.
+.sp
+Jika anda menggunakan opsi ini sebagai yang pertama tanpa opsi pemisah jendela (\-\-window), maka jendala terakhir akan digunakan\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Buka jendela baru yang berisi satu tab; lebih dari satu opsi seperti ini dapat diberikan\&.
+.RE
+.SS "Opsi Tab"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Eksekusi pengingat baris perintah di dalam terminal
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIperintah\fR\fR
+.RS 4
+Eksekusi
+\fIperintah\fR
+di dalam terminal
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIdirektori\fR\fR
+.RS 4
+Atur
+\fIdirektori\fR
+sebagai direktori kerja untuk terminal
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIjudul\fR\fR
+.RS 4
+Atur
+\fIjudul\fR
+sebagai judul jendela utama untuk terminal
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Menyebabkan terminal tetap terbuka ketika perintah anak telah dimatikan
+.RE
+.SS "Opsi Jendela"
+.PP
+\fB\-\-display=\fR\fB\fItampilan\fR\fR
+.RS 4
+Tampilan X untuk digunakan bagi jendela yang terakhir ditentukan\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIgeometri\fR\fR
+.RS 4
+Atur geometri dari jendela yang ditentukan terakhir ke
+\fIgeometri\fR\&. Baca
+\fBX\fR(7)
+untuk informasi lebih lanjut tentang bagaimana menentukan geometri jendela\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIperan\fR\fR
+.RS 4
+Atur peran jendela dari jendela yang ditentukan terakhir ke
+\fIperan\fR\&. Berlaku hanya untuk satu jendela dan dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&. Hal ini seringkali digunakan untuk manajemen sesi di dalam xfce4\-terminal
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fItali\fR\fR
+.RS 4
+Tentukan id notifikasi hidupkan untuk jendela yang ditentukan terakhir\&. Gunakan secara internal untuk meneruskan id notifikasi hidupkan ketika menggunakan layanan D\-BUS\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIikon\fR\fR
+.RS 4
+Atur ikon terminal sebagai nama ikon atau nama berkas\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Atur jendela yang ditentukan terakhir ke dalam mode layar penuh; berlaku hanya untuk satu jendela; dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Atur jendela yang ditentukan terakhir ke dalam mode dimaksimalkan; berlaku hanya untuk satu jendela; dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Nyalakan batang menu untuk jendela yang ditentukan terakhir\&. Dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Matikan batang menu untuk jendela yang ditentukan terakhir\&. Dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Nyalakan dekorasi jendela untuk jendela yang ditentukan terakhir\&. Berlaku hanya untuk satu jendela\&. Dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Matikan dekorasi jendela untuk jendela yang ditentukan terakhir\&. Berlaku hanya untuk satu jendela\&. Dapat ditentukan sekali untuk tiap jendela yang anda buat dari baris perintah\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "CONTOH"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Buka jendela terminal baru dengan geometri 80 kolom dan 40 baris dan dua tab di dalamnya, dimana tab pertama menjalankan
+\fBmutt\fR
+dan tab kedua menjalankan
+\fBmc\fR
+.RE
+.SH "LINGKUNGAN"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+Direktori awal pertama untuk mencari berkas konfigurasi\&. Standarnya ini diatur ke
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+Tanda titik dua memisahkan senarai direktori dasar yang berisi data konfigurasi\&. Standarnya aplikasi akan mencari di
+${sysconfdir}/xdg/\&. Nilai
+\fI${sysconfdir}\fR
+tergantung pada bagaimana program dibangun dan akan sering menjadi
+/etc/
+untuk paket biner\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+Akar untuk semua berkas data khusus pengguna\&. Pada keadaan standar diatur ke
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+Seperangkat pengaturan yang diurutkan secara relatif terhadap direktori dasar sebagai tempat berkas data akan dicari sebagai tambahan untuk direktori dasar
+\fI${XDG_DATA_HOME}\fR\&. Direktori\-direktori harus dipisahkan oleh tanda titik dua\&.
+.RE
+.SH "BERKAS"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Ini adalah lokasi berkas konfigurasi yang termasuk pengaturan yang mengontrol tampilan dan rasa xfce4\-terminal\&.
+.RE
+.SH "LIHAT PULA"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Pengembang
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Pengembang
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Pengembang peranti lunak, os\-cillation, Pengembangan sistem, 
+.RS 4
+Pengembang
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

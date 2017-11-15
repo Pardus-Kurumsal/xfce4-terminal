@@ -1,0 +1,348 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- Эмулятор терминала для X
+.SH "Аннотация"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [ОПЦИЯ...]
+.SH "Описание"
+.PP
+xfce4\-terminal также известен как эмулятор X\-терминала и часто называется просто "терминал" или "шелл"\&. Он равносилен старомодному текстовому интерфейсу, но может легко делить экран с любым графическим приложением\&. Пользователи Windows могут быть уже знакомы с командной строкой MS\-DOS, которая имеет аналогичные функции, предлагая командную строку DOS под Windows, хотя можно заметить, что интерфейс командной строки UNIX предлагает намного большую мощь и простоту использования, чем DOS\&.
+.PP
+xfce4\-terminal эмулирует
+xterm, приложение, разработанное X Consortium\&. В свою очередь приложение
+xterm
+эмулирует терминал DEC VT102 и также поддерживает управляющие последовательности терминала DEC VT220\&. Управляющие последовательности \- это серии символов, начинающиеся с символа
+Esc\&. xfce4\-terminal понимает все последовательности, используемые терминалами VT102 и VT220 для таких функций как позиционирование курсора и очистка экрана\&.
+.SH "Настройки"
+.SS "Общая информация"
+.PP
+Здесь приведена сводка всех опций, сгруппированных по типу\&. Пояснения даны в следующих секциях\&.
+.PP
+Основные настройки
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIдисплей\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIкаталог\fR\fR
+.RE
+.PP
+Разделители окон или вкладок
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Настройки вкладок
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIкаталог\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Настройки окна
+.RS 4
+\fB\-\-display=\fR\fB\fIдисплей\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIгеометрия\fR\fR;
+\fB\-\-role=\fR\fB\fIроль\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIстрока\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIзначок\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Основные настройки"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Вывести список параметров командой строки для приложения xfce4\-terminal и выйти
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Показать информацию о версии и выйти
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Не регистрироваться в сеансовой шине сообщений D\-BUS
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Вывести таблицу кодов цветов
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIдисплей\fR\fR
+.RS 4
+Дисплей по умолчанию\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIкаталог\fR\fR
+.RS 4
+Задать для терминала
+\fIкаталог\fR
+как рабочий каталог по умолчанию
+.RE
+.SS "Разделители окон или вкладок"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Открыть новую вкладку в последнем указанном окне; можно указать несколько таких опций\&.
+.sp
+Если использовать эту опцию первой, без раделителя \-\-window, то будет переиспользовано последнее окно\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Открыть новое окно с одной вкладкой; можно указать несколько таких опций\&.
+.RE
+.SS "Настройки вкладок"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Выполнить оставшуюся часть командной строки как команду в терминале
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR
+.RS 4
+Выполнить
+\fIкоманду\fR
+в терминале
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIкаталог\fR\fR
+.RS 4
+Задать рабочий
+\fIкаталог\fR
+для терминала
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR
+.RS 4
+Задать
+\fIзаголовок\fR
+окна терминала
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Не закрывать окно после завершения дочернего процесса
+.RE
+.SS "Настройки окна"
+.PP
+\fB\-\-display=\fR\fB\fIдисплей\fR\fR
+.RS 4
+Дисплей для последнего указанного окна\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Откроет окно в выпадающем режиме (также известном как терминал в стиле Quake)\&. Опция применима только к первому открытому окну\&. Рекомендуется назначить этому горячую клавишу в настройках\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIгеометрия\fR\fR
+.RS 4
+Задать
+\fIгеометрию\fR
+последнего указанного окна\&. См\&.
+\fBX\fR(7)
+для подробной информации о задании геометрии окон\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIроль\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIстрока\fR\fR
+.RS 4
+Идентификатор уведомления о запуске для последнего указанного окна\&. Служебная опция для передачи идентификатора при использовании D\-BUS\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIзначок\fR\fR
+.RS 4
+Задать значок окна терминала как имя стандартного значка или имя файла значка\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Полноэкранный режим для последнего указанного окна\&. Оказывает эффект только на одно окно\&. Для действия на несколько окон необходимо указывать опцию полноэкранного режима для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Максимизировать (развернуть на весь экран) последнее указанное окно\&. Оказывает эффект только на одно окно\&. Для действия на несколько окон необходимо указывать опцию максимизирования для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Включить строку меню для последнего указанного окна\&. Опцию можно указывать для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Выключить строку меню для последнего указанного окна\&. Опцию можно указывать для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Включить оформление (отображение границ) для последнего указанного окна\&. Оказывает эффект только на одно окно\&. Опцию можно указывать для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Выключить оформление (отображение границ) для последнего указанного окна\&. Оказывает эффект только на одно окно\&. Опцию можно указывать для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Включить полосу прокрутки для последнего указанного окна\&. Расположение полосы берётся из настроек; если в настройках полоса прокрутки отключена, то она будет показана справа\&. Оказывает эффект только на одно окно\&. Для действия на несколько окон необходимо указывать опцию для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Выключить полосу прокрутки для последнего указанного окна\&. Оказывает эффект только на одно окно\&. Для действия на несколько окон необходимо указывать опцию для каждого создаваемого окна\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "Примеры"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Открывает окно терминала в 80 столбцов и 40 строк, содержащее две вкладки, в первой из которых выполняется
+\fBmutt\fR, а во второй \-
+\fBmc\fR\&.
+.RE
+.SH "Переменные среды окружения"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+Базовый каталог для размещения конфигурационных файлов\&. По умолчанию
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+Список каталогов конфигурации, разделенных двоеточиями\&. По умолчанию
+${sysconfdir}/xdg/\&. Значение
+\fI${sysconfdir}\fR
+зависит от сборки программы, чаще всего это
+/etc/\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+Базовый каталог для файлов данных, зависящих от конкретного пользователя\&. По умолчанию
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+Список каталогов, в которых производится поиск файлов данных дополнительно к каталогу
+\fI${XDG_DATA_HOME}\fR\&. Каталоги в списке разделяются двоеточиями\&.
+.RE
+.SH "Файлы"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Файл конфигурации, содержащий настройки внешнего вида xfce4\-terminal\&.
+.RE
+.SH "Смотрите также"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Разработчик
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Разработчик
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Прикладной разработчик, os\-cillation, Системный разработчик, 
+.RS 4
+Разработчик
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

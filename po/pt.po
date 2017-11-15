@@ -1,0 +1,1459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2016
+# José Vieira <jvieira33@sapo.pt>, 2016
+# Nuno Miguel <nunomgue@gmail.com>, 2016-2017
+# Sérgio Marques <smarquespt@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Apps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-25 12:30+0100\n"
+"PO-Revision-Date: 2017-01-26 16:28+0000\n"
+"Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/xfce/xfce-apps/language/pt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../colorschemes/black-on-white.theme.in.h:1
+msgid "Black on White"
+msgstr "Preto em branco"
+
+#: ../colorschemes/dark-pastels.theme.in.h:1
+msgid "Dark Pastels"
+msgstr "Pastel escuro"
+
+#: ../colorschemes/green-on-black.theme.in.h:1
+msgid "Green on Black"
+msgstr "Verde em preto"
+
+#: ../colorschemes/solarized-dark.theme.in.h:1
+msgid "Solarized (dark)"
+msgstr "Solar (escuro)"
+
+#: ../colorschemes/solarized-light.theme.in.h:1
+msgid "Solarized (light)"
+msgstr "Solar (claro)"
+
+#: ../colorschemes/tango.theme.in.h:1
+msgid "Tango"
+msgstr "Tango"
+
+#: ../colorschemes/white-on-black.theme.in.h:1
+msgid "White on Black"
+msgstr "Branco em preto"
+
+#: ../colorschemes/xterm.theme.in.h:1
+msgid "XTerm"
+msgstr "XTerm"
+
+#: ../terminal/main.c:104
+msgid "Usage:"
+msgstr "Utilização:"
+
+#: ../terminal/main.c:104
+msgid "OPTION"
+msgstr "OPÇÃO"
+
+#: ../terminal/main.c:109
+msgid "General Options"
+msgstr "Opções gerais"
+
+#. parameter of --default-display
+#. parameter of --display
+#: ../terminal/main.c:111 ../terminal/main.c:138
+msgid "display"
+msgstr "exibir"
+
+#. parameter of --default-working-directory
+#. parameter of --working-directory
+#: ../terminal/main.c:113 ../terminal/main.c:128
+msgid "directory"
+msgstr "diretório"
+
+#: ../terminal/main.c:117
+msgid "Window or Tab Separators"
+msgstr "Janela ou separadores"
+
+#: ../terminal/main.c:122
+msgid "Tab Options"
+msgstr "Opções de separadores"
+
+#. parameter of --command
+#: ../terminal/main.c:124
+msgid "command"
+msgstr "comando"
+
+#. parameter of --title
+#: ../terminal/main.c:126
+msgid "title"
+msgstr "título"
+
+#: ../terminal/main.c:136
+msgid "Window Options"
+msgstr "Opções de janela"
+
+#. parameter of --geometry
+#: ../terminal/main.c:140
+msgid "geometry"
+msgstr "geometria"
+
+#. parameter of --role
+#: ../terminal/main.c:142
+msgid "role"
+msgstr "função"
+
+#. parameter of --startup-id
+#: ../terminal/main.c:144
+msgid "string"
+msgstr "linha"
+
+#. parameter of --icon
+#: ../terminal/main.c:146
+msgid "icon"
+msgstr "ícone"
+
+#. parameter of --font
+#: ../terminal/main.c:148
+msgid "font"
+msgstr "Tipo de letra"
+
+#. parameter of --zoom
+#: ../terminal/main.c:150
+msgid "zoom"
+msgstr "Ampliar"
+
+#: ../terminal/main.c:152
+#, c-format
+msgid "See the %s man page for full explanation of the options above."
+msgstr "Consulte o manual do %s para uma explicação completa sobre as opções acima."
+
+#: ../terminal/main.c:185 ../xfce4-terminal.desktop.in.h:1
+msgid "Xfce Terminal"
+msgstr "Terminal Xfce"
+
+#: ../terminal/main.c:201
+msgid "The Xfce development team. All rights reserved."
+msgstr "A equipa de desenvolvimento do Xfce. Todos os direitos reservados."
+
+#: ../terminal/main.c:202
+msgid "Written by Benedikt Meurer <benny@xfce.org>,"
+msgstr "Escrito por Benedikt Meurer <benny@xfce.org>,"
+
+#: ../terminal/main.c:203
+msgid "Nick Schermer <nick@xfce.org>"
+msgstr "Nick Schermer <nick@xfce.org>"
+
+#: ../terminal/main.c:204
+msgid "and Igor Zakharov <f2404@yandex.ru>."
+msgstr "e  Igor Zakharov <f2404@yandex.ru>."
+
+#: ../terminal/main.c:205
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Agradece-se que relate erros em <%s>."
+
+#: ../terminal/main.c:312
+#, c-format
+msgid "Unable to register terminal service: %s\n"
+msgstr "Incapaz de registar o serviço de terminal: %s\n"
+
+#: ../terminal/terminal-app.c:875
+#, c-format
+msgid "Invalid geometry string \"%s\"\n"
+msgstr "Linha geométrica inválida \"%s\"\n"
+
+#: ../terminal/terminal-encoding-action.c:68
+msgid "Western European"
+msgstr "Europeu ocidental"
+
+#: ../terminal/terminal-encoding-action.c:69
+msgid "Central European"
+msgstr "Europeu central"
+
+#: ../terminal/terminal-encoding-action.c:70
+msgid "Baltic"
+msgstr "Báltico"
+
+#: ../terminal/terminal-encoding-action.c:71
+msgid "South-Eastern Europe"
+msgstr "Europeu oriental"
+
+#: ../terminal/terminal-encoding-action.c:72
+msgid "Turkish"
+msgstr "Turco"
+
+#: ../terminal/terminal-encoding-action.c:73
+msgid "Cyrillic"
+msgstr "Cirílico"
+
+#: ../terminal/terminal-encoding-action.c:74
+msgid "Chinese Traditional"
+msgstr "Chinês tradicional"
+
+#: ../terminal/terminal-encoding-action.c:75
+msgid "Chinese Simplified"
+msgstr "Chinês simplificado"
+
+#: ../terminal/terminal-encoding-action.c:76
+msgid "Korean"
+msgstr "Coreano"
+
+#: ../terminal/terminal-encoding-action.c:77
+msgid "Japanese"
+msgstr "Japonês"
+
+#: ../terminal/terminal-encoding-action.c:78
+msgid "Greek"
+msgstr "Grego"
+
+#: ../terminal/terminal-encoding-action.c:79
+msgid "Arabic"
+msgstr "Árabe"
+
+#: ../terminal/terminal-encoding-action.c:80
+msgid "Hebrew"
+msgstr "Hebraico"
+
+#: ../terminal/terminal-encoding-action.c:81
+msgid "Thai"
+msgstr "Tailandês"
+
+#: ../terminal/terminal-encoding-action.c:82
+msgid "Vietnamese"
+msgstr "Vietnamita"
+
+#: ../terminal/terminal-encoding-action.c:83
+msgid "Nordic"
+msgstr "Nórdico"
+
+#: ../terminal/terminal-encoding-action.c:84
+msgid "Celtic"
+msgstr "Celta"
+
+#: ../terminal/terminal-encoding-action.c:85
+msgid "Romanian"
+msgstr "Romeno"
+
+#: ../terminal/terminal-encoding-action.c:86
+msgid "Armenian"
+msgstr "Arménio"
+
+#: ../terminal/terminal-encoding-action.c:87
+msgid "Georgian"
+msgstr "Georgiano"
+
+#: ../terminal/terminal-encoding-action.c:88
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../terminal/terminal-encoding-action.c:89
+msgid "Other"
+msgstr "Outra"
+
+#. action to reset to the default
+#: ../terminal/terminal-encoding-action.c:267
+#: ../terminal/terminal-encoding-action.c:396
+#, c-format
+msgid "Default (%s)"
+msgstr "Pré-definição (%s)"
+
+#: ../terminal/terminal-gdbus.c:104
+msgid "User id mismatch"
+msgstr "Erro de identificação de utilizador"
+
+#: ../terminal/terminal-gdbus.c:110
+msgid "Display mismatch"
+msgstr "Erro de exibição"
+
+#: ../terminal/terminal-options.c:217
+#, c-format
+msgid ""
+"Option \"--default-display\" requires specifying the default X display as "
+"its parameter"
+msgstr "A opção \"--default-display\" requer que especifique o ecrã pré-definido do X como parâmetro"
+
+#: ../terminal/terminal-options.c:233
+#, c-format
+msgid ""
+"Option \"--default-working-directory\" requires specifying the default "
+"working directory as its parameter"
+msgstr "A opção \"--default-working-directory\" requer que especifique a diretoria de trabalho pré-definida como parâmetro"
+
+#: ../terminal/terminal-options.c:250
+#, c-format
+msgid ""
+"Option \"--execute/-x\" requires specifying the command to run on the rest "
+"of the command line"
+msgstr "A opção \"--execute/-x\" requer que especifique o comando a executar no resto da linha de comandos"
+
+#: ../terminal/terminal-options.c:267
+#, c-format
+msgid ""
+"Option \"--command/-e\" requires specifying the command to run as its "
+"parameter"
+msgstr "A opção \"--command/-e\" requer que especifique o comando a executar como parâmetro "
+
+#: ../terminal/terminal-options.c:284
+#, c-format
+msgid ""
+"Option \"--working-directory\" requires specifying the working directory as "
+"its parameter"
+msgstr "A opção \"--working-directory\" requer que especifique a diretaria de trabalho como parâmetro"
+
+#: ../terminal/terminal-options.c:299
+#, c-format
+msgid "Option \"--title/-T\" requires specifying the title as its parameter"
+msgstr "A opção \"--title/-T\" requer que especifique o título como parâmetro"
+
+#: ../terminal/terminal-options.c:318
+#, c-format
+msgid "Option \"--display\" requires specifying the X display as its parameters"
+msgstr "A opção \"--display\" requer que especifique  o ecrã do X como parâmetro"
+
+#: ../terminal/terminal-options.c:333
+#, c-format
+msgid ""
+"Option \"--geometry\" requires specifying the window geometry as its "
+"parameter"
+msgstr "A opção \"--geometry\" requer que especifique a geometria da janela como parâmetro"
+
+#: ../terminal/terminal-options.c:348
+#, c-format
+msgid "Option \"--role\" requires specifying the window role as its parameter"
+msgstr "A opção \"--role\" requer que especifique a função da janela como parâmetro"
+
+#: ../terminal/terminal-options.c:363
+#, c-format
+msgid ""
+"Option \"--sm-client-id\" requires specifying the unique session id as its "
+"parameter"
+msgstr "A opção \"--sm-client-id\" requer que especifique a ID de arranque como parâmetro"
+
+#: ../terminal/terminal-options.c:378
+#, c-format
+msgid ""
+"Option \"--startup-id\" requires specifying the startup id as its parameter"
+msgstr "A opção \"--startup-id\" requer que especifique a ID de arranque como parâmetro"
+
+#: ../terminal/terminal-options.c:394
+#, c-format
+msgid ""
+"Option \"--icon/-I\" requires specifying an icon name or filename as its "
+"parameter"
+msgstr "A opção \"--icon/-I\" requer que especifique o nome do ícone ou do ficheiro como parâmetro"
+
+#: ../terminal/terminal-options.c:461
+#, c-format
+msgid "Option \"--font\" requires specifying the font name as its parameter"
+msgstr "A opção \"--font\" requer que indique o tipo de letra como parâmetro"
+
+#: ../terminal/terminal-options.c:479
+#, c-format
+msgid "Option \"--zoom\" requires specifying the zoom (%d .. %d) as its parameter"
+msgstr "Opção \"--zoom\" requer que indique o zoom (%d .. %d) como parâmetro"
+
+#: ../terminal/terminal-options.c:501
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr "Opção desconhecida \"%s\""
+
+#: ../terminal/terminal-preferences-dialog.c:359
+msgid "All Files"
+msgstr "Todos os ficheiros"
+
+#: ../terminal/terminal-preferences-dialog.c:365
+msgid "Image Files"
+msgstr "Ficheiros de Imagem"
+
+#: ../terminal/terminal-preferences-dialog.c:790
+msgid "Load Presets..."
+msgstr "Carregar pré-ajustes..."
+
+#: ../terminal/terminal-preferences.c:1051
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../terminal/terminal-screen.c:390 ../terminal/terminal-screen.c:755
+#: ../terminal/terminal-screen.c:1882
+msgid "Untitled"
+msgstr "Sem título"
+
+#: ../terminal/terminal-screen.c:656
+#, c-format
+msgid "Unable to determine your login shell."
+msgstr "Incapaz de determinar a shell de início de sessão."
+
+#: ../terminal/terminal-screen.c:1552 ../terminal/terminal-screen.c:1578
+msgid "Failed to execute child"
+msgstr "Falha ao executar dependente"
+
+#: ../terminal/terminal-screen.c:2201
+msgid "Close this tab"
+msgstr "Fechar este separador"
+
+#: ../terminal/terminal-search-dialog.c:90
+msgid "Find"
+msgstr "Localizar"
+
+#: ../terminal/terminal-search-dialog.c:93 ../terminal/terminal-window.c:1927
+msgid "_Close"
+msgstr "Fe_char"
+
+#: ../terminal/terminal-search-dialog.c:97
+msgid "_Previous"
+msgstr "_Anterior"
+
+#: ../terminal/terminal-search-dialog.c:101
+msgid "_Next"
+msgstr "_Seguinte"
+
+#: ../terminal/terminal-search-dialog.c:111
+msgid "_Search for:"
+msgstr "Pr_ocurar:"
+
+#: ../terminal/terminal-search-dialog.c:124
+msgid "C_ase sensitive"
+msgstr "Distinguir m_aiúsculas de minúsculas "
+
+#: ../terminal/terminal-search-dialog.c:129
+msgid "Match as _regular expression"
+msgstr "Coincidente com expressão reg_ular"
+
+#: ../terminal/terminal-search-dialog.c:134
+msgid "Match _entire word only"
+msgstr "Coincid_ente com palavra completa"
+
+#: ../terminal/terminal-search-dialog.c:139
+msgid "_Wrap around"
+msgstr "Tra_nslinear"
+
+#: ../terminal/terminal-util.c:80 ../xfce4-terminal-default-apps.xml.in.in.h:1
+msgid "Xfce Terminal Emulator"
+msgstr "Emulador de terminal do Xfce"
+
+#: ../terminal/terminal-util.c:88
+msgid "translator-credits"
+msgstr "Nuno Miguel <nunomgue@gmail.com>"
+
+#: ../terminal/terminal-util.c:91
+msgid "Visit Terminal website"
+msgstr "Consulte o sítio web do Terminal"
+
+#: ../terminal/terminal-widget.c:308
+msgid "Copy Email Address"
+msgstr "Copiar endereço eletrónico"
+
+#: ../terminal/terminal-widget.c:309
+msgid "Compose Email"
+msgstr "Escrever mensagem eletrónica"
+
+#: ../terminal/terminal-widget.c:313
+msgid "Copy Link Address"
+msgstr "Copiar endereço da ligação"
+
+#: ../terminal/terminal-widget.c:314
+msgid "Open Link"
+msgstr "Abrir ligação"
+
+#: ../terminal/terminal-widget.c:479
+#, c-format
+msgid ""
+"Unable to drop selection of type text/plain to terminal: Wrong format (%d) "
+"or length (%d)\n"
+msgstr "Incapaz de largar a seleção do tipo texto/simple no terminal: formato (%d) ou comprimento (%d) errado\n"
+
+#: ../terminal/terminal-widget.c:495
+#, c-format
+msgid ""
+"Unable to drop Mozilla URL on terminal: Wrong format (%d) or length (%d)\n"
+msgstr "Incapaz de largar o URL Mozilla no terminal: formato (%d) ou comprimento (%d) errado\n"
+
+#: ../terminal/terminal-widget.c:521
+#, c-format
+msgid "Unable to drop URI list on terminal: Wrong format (%d) or length (%d)\n"
+msgstr "Incapaz de largar a lista URI no terminal: formato (%d) ou comprimento (%d) errado\n"
+
+#: ../terminal/terminal-widget.c:557
+#, c-format
+msgid "Received invalid color data: Wrong format (%d) or length (%d)\n"
+msgstr "Recebidos dados de cor inválidos: formato (%d) ou comprimento (%d) errado\n"
+
+#: ../terminal/terminal-widget.c:693
+#, c-format
+msgid "Failed to open the URL '%s'"
+msgstr "Falha ao abrir o URL '%s'"
+
+#: ../terminal/terminal-window-dropdown.c:263
+msgid "Keep window open when it loses focus"
+msgstr "Manter janela aberta se esta perder o foco"
+
+#: ../terminal/terminal-window-dropdown.c:354
+msgid "Drop-down Terminal"
+msgstr "Terminal suspenso"
+
+#: ../terminal/terminal-window-dropdown.c:355
+msgid "Toggle Drop-down Terminal"
+msgstr "Alternar terminal suspenso"
+
+#: ../terminal/terminal-window.c:313
+msgid "_File"
+msgstr "Fi_cheiro"
+
+#: ../terminal/terminal-window.c:314
+msgid "Open _Tab"
+msgstr "Abrir _separador"
+
+#: ../terminal/terminal-window.c:314
+msgid "Open a new terminal tab"
+msgstr "Abrir novo separador de terminal"
+
+#: ../terminal/terminal-window.c:315
+msgid "Open T_erminal"
+msgstr "Abrir t_erminal"
+
+#: ../terminal/terminal-window.c:315
+msgid "Open a new terminal window"
+msgstr "Abrir nova janela de terminal"
+
+#: ../terminal/terminal-window.c:316
+msgid "_Undo Close Tab"
+msgstr "Desfa_zer fechar separador"
+
+#: ../terminal/terminal-window.c:317
+msgid "_Detach Tab"
+msgstr "_Destacar separador"
+
+#: ../terminal/terminal-window.c:318 ../terminal/terminal-window.c:710
+msgid "Close T_ab"
+msgstr "Fech_ar separador"
+
+#: ../terminal/terminal-window.c:319
+msgid "Close Other Ta_bs"
+msgstr "Fec_har outros separadores"
+
+#: ../terminal/terminal-window.c:320 ../terminal/terminal-window.c:713
+msgid "Close _Window"
+msgstr "Fechar ja_nela"
+
+#: ../terminal/terminal-window.c:321
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../terminal/terminal-window.c:322
+msgid "_Copy"
+msgstr "_Copiar"
+
+#: ../terminal/terminal-window.c:322
+msgid "Copy to clipboard"
+msgstr "Copiar para a área de transferência"
+
+#: ../terminal/terminal-window.c:323
+msgid "_Paste"
+msgstr "C_olar"
+
+#: ../terminal/terminal-window.c:323
+msgid "Paste from clipboard"
+msgstr "Colar da área de transferência"
+
+#: ../terminal/terminal-window.c:324
+msgid "Paste _Selection"
+msgstr "Colar _seleção"
+
+#: ../terminal/terminal-window.c:325
+msgid "Select _All"
+msgstr "Selecion_ar tudo"
+
+#: ../terminal/terminal-window.c:326
+msgid "Pr_eferences..."
+msgstr "Pr_eferências..."
+
+#: ../terminal/terminal-window.c:326
+msgid "Open the preferences dialog"
+msgstr "Abrir caixa de diálogo de preferências"
+
+#: ../terminal/terminal-window.c:327
+msgid "_View"
+msgstr "_Ver"
+
+#: ../terminal/terminal-window.c:328
+msgid "Zoom _In"
+msgstr "A_mpliar"
+
+#: ../terminal/terminal-window.c:328
+msgid "Zoom in with larger font"
+msgstr "Aumentar com tipo de letra maior"
+
+#: ../terminal/terminal-window.c:329
+msgid "Zoom _Out"
+msgstr "Redu_zir"
+
+#: ../terminal/terminal-window.c:329
+msgid "Zoom out with smaller font"
+msgstr "Reduzir com tipo de letra menor"
+
+#: ../terminal/terminal-window.c:330
+msgid "_Normal Size"
+msgstr "Tamanho _normal"
+
+#: ../terminal/terminal-window.c:330
+msgid "Zoom to default size"
+msgstr "Repôr o tamanho pré-definido"
+
+#: ../terminal/terminal-window.c:331
+msgid "_Terminal"
+msgstr "T_erminal"
+
+#: ../terminal/terminal-window.c:332
+msgid "_Set Title..."
+msgstr "_Definir título..."
+
+#: ../terminal/terminal-window.c:333
+msgid "_Find..."
+msgstr "_Localizar..."
+
+#: ../terminal/terminal-window.c:333
+msgid "Search terminal contents"
+msgstr "Pesquisar conteúdo do terminal"
+
+#: ../terminal/terminal-window.c:334
+msgid "Find Ne_xt"
+msgstr "_Seguinte"
+
+#: ../terminal/terminal-window.c:335
+msgid "Find Pre_vious"
+msgstr "_Anterior"
+
+#: ../terminal/terminal-window.c:336
+msgid "Sa_ve Contents..."
+msgstr "Guar_dar conteúdo..."
+
+#: ../terminal/terminal-window.c:337
+msgid "_Reset"
+msgstr "_Repor"
+
+#: ../terminal/terminal-window.c:338
+msgid "_Clear Scrollback and Reset"
+msgstr "Limpar barra de deslo_cação e reiniciar"
+
+#: ../terminal/terminal-window.c:339
+msgid "T_abs"
+msgstr "Separa_dores"
+
+#: ../terminal/terminal-window.c:340
+msgid "_Previous Tab"
+msgstr "Separador _anterior"
+
+#: ../terminal/terminal-window.c:340
+msgid "Switch to previous tab"
+msgstr "Mudar para o separador anterior"
+
+#: ../terminal/terminal-window.c:341
+msgid "_Next Tab"
+msgstr "Separador _seguinte"
+
+#: ../terminal/terminal-window.c:341
+msgid "Switch to next tab"
+msgstr "Mudar para o separador seguinte"
+
+#: ../terminal/terminal-window.c:342
+msgid "Move Tab _Left"
+msgstr "Mover separador para a _esquerda"
+
+#: ../terminal/terminal-window.c:343
+msgid "Move Tab _Right"
+msgstr "Mover separador para a _direita"
+
+#: ../terminal/terminal-window.c:344 ../terminal/terminal-window.c:1925
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: ../terminal/terminal-window.c:345
+msgid "_Contents"
+msgstr "_Conteúdo"
+
+#: ../terminal/terminal-window.c:345
+msgid "Display help contents"
+msgstr "Mostrar conteúdo de ajuda"
+
+#: ../terminal/terminal-window.c:346
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../terminal/terminal-window.c:347
+msgid "_Zoom"
+msgstr "_Ampliação"
+
+#: ../terminal/terminal-window.c:352
+msgid "Show _Menubar"
+msgstr "Mostrar barra de _menu"
+
+#: ../terminal/terminal-window.c:352
+msgid "Show/hide the menubar"
+msgstr "Mostrar/ocultar barra de menu"
+
+#: ../terminal/terminal-window.c:353
+msgid "Show _Toolbar"
+msgstr "Mostrar barra de ferrame_ntas"
+
+#: ../terminal/terminal-window.c:353
+msgid "Show/hide the toolbar"
+msgstr "Mostrar/ocultar barra de ferramentas"
+
+#: ../terminal/terminal-window.c:354
+msgid "Show Window _Borders"
+msgstr "Mostrar contornos da j_anela"
+
+#: ../terminal/terminal-window.c:354
+msgid "Show/hide the window decorations"
+msgstr "Mostrar/ocultar decorações de janela"
+
+#: ../terminal/terminal-window.c:355
+msgid "_Fullscreen"
+msgstr "_Ecrã completo"
+
+#: ../terminal/terminal-window.c:355
+msgid "Toggle fullscreen mode"
+msgstr "Alternar o modo de ecrã completo"
+
+#: ../terminal/terminal-window.c:356
+msgid "_Read-Only"
+msgstr "_Só de leitura"
+
+#: ../terminal/terminal-window.c:356
+msgid "Toggle read-only mode"
+msgstr "Alternar o modo só de leitura"
+
+#. create encoding action
+#: ../terminal/terminal-window.c:510
+msgid "Set _Encoding"
+msgstr "D_efinir codificação"
+
+#: ../terminal/terminal-window.c:703
+msgid "Warning"
+msgstr "Aviso"
+
+#: ../terminal/terminal-window.c:706 ../terminal/terminal-window.c:2084
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: ../terminal/terminal-window.c:729
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "Esta janela tem %d separadores abertos. Ao fechar a janela\nfecha todos os separadores."
+
+#: ../terminal/terminal-window.c:732
+msgid "Close all tabs?"
+msgstr "Fechar todos os separadores?"
+
+#: ../terminal/terminal-window.c:744
+msgid "Do _not ask me again"
+msgstr "Não perguntar _novamente"
+
+#: ../terminal/terminal-window.c:1916
+msgid "Window Title|Set Title"
+msgstr "Definir título"
+
+#: ../terminal/terminal-window.c:1937
+msgid "_Title:"
+msgstr "Tít_ulo:"
+
+#: ../terminal/terminal-window.c:1949
+msgid "Enter the title for the current terminal tab"
+msgstr "Introduza o título para o atual separador de terminal"
+
+#: ../terminal/terminal-window.c:2003
+msgid "Failed to create the regular expression"
+msgstr "Ocorreu um erro ao criar a expressão"
+
+#: ../terminal/terminal-window.c:2081
+msgid "Save contents..."
+msgstr "Guardar conteúdo..."
+
+#: ../terminal/terminal-window.c:2085
+msgid "_Save"
+msgstr "_Guardar"
+
+#: ../terminal/terminal-window.c:2122
+msgid "Failed to save terminal contents"
+msgstr "Falha ao guardar conteúdo do terminal"
+
+#: ../terminal/terminal-preferences.glade.h:1
+msgid "Replaces initial title"
+msgstr "Substitui o título inicial"
+
+#: ../terminal/terminal-preferences.glade.h:2
+msgid "Goes before initial title"
+msgstr "Antes do título inicial"
+
+#: ../terminal/terminal-preferences.glade.h:3
+msgid "Goes after initial title"
+msgstr "Depois do título inicial"
+
+#: ../terminal/terminal-preferences.glade.h:4
+msgid "Isn't displayed"
+msgstr "Não é exibido"
+
+#: ../terminal/terminal-preferences.glade.h:5
+msgid "Disabled"
+msgstr "Desligado"
+
+#: ../terminal/terminal-preferences.glade.h:6
+msgid "On the left side"
+msgstr "No lado esquerdo"
+
+#: ../terminal/terminal-preferences.glade.h:7
+msgid "On the right side"
+msgstr "No lado direito"
+
+#: ../terminal/terminal-preferences.glade.h:8
+msgid "None (use solid color)"
+msgstr "Nenhum (usar cor sólida)"
+
+#: ../terminal/terminal-preferences.glade.h:9
+msgid "Background image"
+msgstr "Imagem de fundo"
+
+#: ../terminal/terminal-preferences.glade.h:10
+msgid "Transparent background"
+msgstr "Fundo transparente"
+
+#: ../terminal/terminal-preferences.glade.h:11
+msgid "Auto-detect"
+msgstr "Deteção automática"
+
+#: ../terminal/terminal-preferences.glade.h:12
+msgid "ASCII DEL"
+msgstr "ASCII DEL"
+
+#: ../terminal/terminal-preferences.glade.h:13
+msgid "Escape sequence"
+msgstr "Sequência de saída"
+
+#: ../terminal/terminal-preferences.glade.h:14
+msgid "Control-H"
+msgstr "Control-H"
+
+#: ../terminal/terminal-preferences.glade.h:15
+msgid "Erase TTY"
+msgstr "Apagar TTY"
+
+#: ../terminal/terminal-preferences.glade.h:16
+msgid "Tiled"
+msgstr "Mosaico"
+
+#: ../terminal/terminal-preferences.glade.h:17
+msgid "Centered"
+msgstr "Centrado"
+
+#: ../terminal/terminal-preferences.glade.h:18
+msgid "Scaled"
+msgstr "À escala"
+
+#: ../terminal/terminal-preferences.glade.h:19
+msgid "Stretched"
+msgstr "Esticado"
+
+#: ../terminal/terminal-preferences.glade.h:20
+msgid "Block"
+msgstr "Bloquear"
+
+#: ../terminal/terminal-preferences.glade.h:21
+msgid "I-Beam"
+msgstr "I-Beam"
+
+#: ../terminal/terminal-preferences.glade.h:22
+msgid "Underline"
+msgstr "Sublinhado"
+
+#: ../terminal/terminal-preferences.glade.h:23
+msgid "Narrow"
+msgstr "Estreito"
+
+#: ../terminal/terminal-preferences.glade.h:24
+msgid "Wide"
+msgstr "Largo"
+
+#: ../terminal/terminal-preferences.glade.h:25
+msgid "Terminal Preferences"
+msgstr "Preferências do Terminal"
+
+#: ../terminal/terminal-preferences.glade.h:26
+msgid "_Initial title:"
+msgstr "Título i_nicial:"
+
+#: ../terminal/terminal-preferences.glade.h:27
+msgid "_Dynamically-set title:"
+msgstr "Título _dinâmico:"
+
+#: ../terminal/terminal-preferences.glade.h:28
+msgid "Title"
+msgstr "Título"
+
+#: ../terminal/terminal-preferences.glade.h:29
+msgid "_Run command as login shell"
+msgstr "_Executar comando numa shell de início de sessão"
+
+#: ../terminal/terminal-preferences.glade.h:30
+msgid ""
+"Select this option to force Terminal to run your shell as a login shell when"
+" you open new terminals. See the documentation of your shell for details "
+"about differences between running it as interactive shell and running it as "
+"login shell."
+msgstr "Selecione esta opção para forçar o Terminal a executar a sua shell como shell de início de sessão ao abrir novos terminais. Consulte a documentação da shell para detalhes sobre as diferenças entre a execução de uma shell interativa e a shell de início de sessão."
+
+#: ../terminal/terminal-preferences.glade.h:31
+msgid "Run a _custom command instead of my shell"
+msgstr "Executar um comando p_essoal em vez da minha shell"
+
+#: ../terminal/terminal-preferences.glade.h:32
+msgid ""
+"Select this option to force Terminal to run custom command instead of your "
+"shell when you open new terminals."
+msgstr "Seleccionar esta opção para forçar o Terminal a executar o comando pessoal em vez da sua shell, quando abre novos terminais."
+
+#: ../terminal/terminal-preferences.glade.h:33
+msgid "C_ustom command:"
+msgstr "Comando pe_ssoal:"
+
+#: ../terminal/terminal-preferences.glade.h:34
+msgid "Command"
+msgstr "Comando"
+
+#: ../terminal/terminal-preferences.glade.h:35
+msgid "Scroll on ou_tput"
+msgstr "Deslocar na _saída"
+
+#: ../terminal/terminal-preferences.glade.h:36
+msgid ""
+"This option controls whether the terminal will scroll down automatically "
+"whenever new output is generated by the commands running inside the "
+"terminal."
+msgstr "Esta opção define se o terminal se desloca para baixo automaticamente ou não, sempre que nova informação é gerada pelos comandos executados no terminal."
+
+#: ../terminal/terminal-preferences.glade.h:37
+msgid "Scroll on _keystroke"
+msgstr "Deslocar ao premir a te_cla"
+
+#: ../terminal/terminal-preferences.glade.h:38
+msgid ""
+"Enables you to press any key on the keyboard to scroll down the terminal "
+"window to the command prompt."
+msgstr "Permite que pressione qualquer tecla no teclado para deslocar a janela do terminal até à linha de comandos."
+
+#: ../terminal/terminal-preferences.glade.h:39
+msgid "Scr_ollbar is:"
+msgstr "Barra de desl_ocamento:"
+
+#: ../terminal/terminal-preferences.glade.h:40
+msgid "Scroll_back:"
+msgstr "Desloca_mento para trás:"
+
+#: ../terminal/terminal-preferences.glade.h:41
+msgid ""
+"Specifies the number of lines that you can scroll back using the scrollbar."
+msgstr "Indica o número de linhas que pode recuar ao utilizar a barra de deslocamento."
+
+#: ../terminal/terminal-preferences.glade.h:42
+msgid "Unli_mited scrollback"
+msgstr "Deslocamento ilimitado"
+
+#: ../terminal/terminal-preferences.glade.h:43
+msgid ""
+"This option controls whether the terminal will have no limits on scrollback."
+msgstr "Esta opção define se o terminal tem ou não limites no deslocamento."
+
+#: ../terminal/terminal-preferences.glade.h:44
+msgid "Scrolling"
+msgstr "Deslocação"
+
+#: ../terminal/terminal-preferences.glade.h:45
+msgid "Cursor shape:"
+msgstr "Forma do cursor:"
+
+#: ../terminal/terminal-preferences.glade.h:46
+msgid "Cursor blinks"
+msgstr "Cursor pisca"
+
+#: ../terminal/terminal-preferences.glade.h:47
+msgid "This option controls whether the cursor will be blinking or not."
+msgstr "Esta opção define se o cursor pisca ou não."
+
+#: ../terminal/terminal-preferences.glade.h:48
+msgid "Cursor"
+msgstr "Cursor"
+
+#: ../terminal/terminal-preferences.glade.h:49
+msgid "_General"
+msgstr "_Geral"
+
+#: ../terminal/terminal-preferences.glade.h:50
+msgid "_Keep window open when it loses focus"
+msgstr "Manter janela aberta se esta perd_er o foco"
+
+#: ../terminal/terminal-preferences.glade.h:51
+msgid "Always keep window on _top"
+msgstr "Ma_nter janela sempre na frente"
+
+#: ../terminal/terminal-preferences.glade.h:52
+msgid "Use shortcut to _focus visible window"
+msgstr "Utilizar atal_ho para focar a janela visível"
+
+#: ../terminal/terminal-preferences.glade.h:53
+msgid ""
+"If enabled, the shortcut to open and retract the window will give focus, "
+"rather than closing it, if it has previously lost focus"
+msgstr "Se ligado, o atalho para abrir e retrair a janela irá dar-lhe foco, em vez de a fechar, se anteriormente a janela tiver perdido o foco"
+
+#: ../terminal/terminal-preferences.glade.h:54
+msgid "Show _status icon in notification area"
+msgstr "Mo_strar ícone de estado na área de notificação"
+
+#: ../terminal/terminal-preferences.glade.h:55
+msgid "Behavior"
+msgstr "Comportamento"
+
+#: ../terminal/terminal-preferences.glade.h:56
+msgid "Wi_dth:"
+msgstr "_Largura:"
+
+#: ../terminal/terminal-preferences.glade.h:57
+msgid "He_ight:"
+msgstr "_Altura:"
+
+#: ../terminal/terminal-preferences.glade.h:58
+msgid "_Always show tabs"
+msgstr "Mostr_ar sempre os separadores"
+
+#: ../terminal/terminal-preferences.glade.h:59
+msgid "D_uration:"
+msgstr "D_uração:"
+
+#: ../terminal/terminal-preferences.glade.h:60
+msgid "ms"
+msgstr "ms"
+
+#: ../terminal/terminal-preferences.glade.h:61
+msgid "_Opacity:"
+msgstr "_Opacidade:"
+
+#: ../terminal/terminal-preferences.glade.h:62
+msgid ""
+"Sorry, your Window Manager does not support compositing:\n"
+"Opacity setting is not available."
+msgstr "O seu gestor de janelas não suporta composição de efeitos:\nA definição de opacidade não disponível."
+
+#: ../terminal/terminal-preferences.glade.h:64
+msgid "Show window _borders"
+msgstr "Mostrar _bordas de janela"
+
+#: ../terminal/terminal-preferences.glade.h:65
+msgid "Appearance and Animation"
+msgstr "Aparência e animação"
+
+#: ../terminal/terminal-preferences.glade.h:66
+msgid "L_eft"
+msgstr "_Esquerda"
+
+#: ../terminal/terminal-preferences.glade.h:67
+msgid "Right"
+msgstr "_Direita"
+
+#: ../terminal/terminal-preferences.glade.h:68
+msgid "Move to monitor with poi_nter"
+msgstr "Mover para o monitor com _cursor"
+
+#: ../terminal/terminal-preferences.glade.h:69
+msgid "Position"
+msgstr "Posição"
+
+#: ../terminal/terminal-preferences.glade.h:70
+msgid "Drop-do_wn"
+msgstr "Su_spenso"
+
+#: ../terminal/terminal-preferences.glade.h:71
+msgid "Choose Terminal Font"
+msgstr "Escolher o tipo de letra do terminal"
+
+#: ../terminal/terminal-preferences.glade.h:72
+msgid "Use system _font"
+msgstr "Usar o tipo de l_etra do sistema"
+
+#: ../terminal/terminal-preferences.glade.h:73
+msgid "Enable this option to use system-wide monospace font."
+msgstr "Ativar esta opção para usar um tipo de letra mono-espaço em todo o sistema."
+
+#: ../terminal/terminal-preferences.glade.h:74
+msgid "Allow bold te_xt"
+msgstr "Permitir te_xto em negrito"
+
+#: ../terminal/terminal-preferences.glade.h:75
+msgid ""
+"Enable this option to allow applications running inside the terminal windows"
+" to use bold text."
+msgstr "Ativar esta opção para permitir que as aplicações em execução no terminal utilizem texto em negrito."
+
+#: ../terminal/terminal-preferences.glade.h:76
+msgid "Font"
+msgstr "Tipo de letra"
+
+#: ../terminal/terminal-preferences.glade.h:77
+msgid "_File:"
+msgstr "_Ficheiro"
+
+#: ../terminal/terminal-preferences.glade.h:78
+msgid "St_yle:"
+msgstr "_Estilo:"
+
+#: ../terminal/terminal-preferences.glade.h:79
+msgid "Select Background Image File"
+msgstr "Selecionar a imagem de fundo"
+
+#: ../terminal/terminal-preferences.glade.h:80
+msgid "_Shading:"
+msgstr "_Sombrear:"
+
+#: ../terminal/terminal-preferences.glade.h:81
+msgid "Background"
+msgstr "Fundo"
+
+#: ../terminal/terminal-preferences.glade.h:82
+msgid "Display _menubar in new windows"
+msgstr "Mostrar barra de _menu nas novas janelas"
+
+#: ../terminal/terminal-preferences.glade.h:83
+msgid ""
+"Enable this option to show the menubar in newly created terminal windows."
+msgstr "Ativar esta opção para mostrar a barra de menu nas novas janelas do terminal."
+
+#: ../terminal/terminal-preferences.glade.h:84
+msgid "Display _toolbar in new windows"
+msgstr "Mostrar barra de ferramen_tas nas novas janelas"
+
+#: ../terminal/terminal-preferences.glade.h:85
+msgid ""
+"Enable this option to show the toolbar in newly created terminal windows."
+msgstr "Ativar esta opção para mostrar a barra de ferramentas nas novas janelas do terminal."
+
+#: ../terminal/terminal-preferences.glade.h:86
+msgid "Display _borders around new windows"
+msgstr "Mostrar contornos em redor das n_ovas janelas"
+
+#: ../terminal/terminal-preferences.glade.h:87
+msgid ""
+"Enable this option to show window decorations around newly created terminal "
+"windows."
+msgstr "Ativar esta opção para mostrar as decorações da janela nas novas janelas do terminal."
+
+#: ../terminal/terminal-preferences.glade.h:88
+msgid "Default geometry:"
+msgstr "Geometria pré-definida:"
+
+#: ../terminal/terminal-preferences.glade.h:89
+msgid "c_olumns"
+msgstr "c_olunas"
+
+#: ../terminal/terminal-preferences.glade.h:90
+msgid "row_s"
+msgstr "linha_s"
+
+#: ../terminal/terminal-preferences.glade.h:91
+msgid "Opening New Windows"
+msgstr "A abrir novas janelas"
+
+#: ../terminal/terminal-preferences.glade.h:92
+msgid "Reset tab activity _indicator after"
+msgstr "Repor in_dicador de atividade do separador após"
+
+#: ../terminal/terminal-preferences.glade.h:93
+msgid "seconds"
+msgstr "segundos"
+
+#: ../terminal/terminal-preferences.glade.h:94
+msgid "Tab Activity Indicator"
+msgstr "Indicador de atividade do separador"
+
+#: ../terminal/terminal-preferences.glade.h:95
+msgid "_Appearance"
+msgstr "_Aparência"
+
+#: ../terminal/terminal-preferences.glade.h:96
+msgid "_Text color:"
+msgstr "Cor do te_xto:"
+
+#: ../terminal/terminal-preferences.glade.h:97
+msgid "Choose text color"
+msgstr "Escolher a cor do texto"
+
+#: ../terminal/terminal-preferences.glade.h:98
+msgid "Color Selector"
+msgstr "Seleção de cor"
+
+#: ../terminal/terminal-preferences.glade.h:99
+msgid "Open a dialog to specify the color"
+msgstr "Abrir uma caixa de diálogo para especificar a cor"
+
+#: ../terminal/terminal-preferences.glade.h:100
+msgid "Cu_rsor color:"
+msgstr "Cor do _cursor:"
+
+#: ../terminal/terminal-preferences.glade.h:101
+msgid "Choose cursor color"
+msgstr "Escolher a cor do cursor"
+
+#: ../terminal/terminal-preferences.glade.h:102
+msgid "_Background color:"
+msgstr "Cor de f_undo:"
+
+#: ../terminal/terminal-preferences.glade.h:103
+msgid "Choose background color"
+msgstr "Escolher a cor de fundo"
+
+#: ../terminal/terminal-preferences.glade.h:104
+msgid "Tab activit_y color:"
+msgstr "Cor de atividade do _separador:"
+
+#: ../terminal/terminal-preferences.glade.h:105
+msgid "Choose tab activity color"
+msgstr "Escolher a cor de atividade do separador"
+
+#: ../terminal/terminal-preferences.glade.h:106
+msgid "_Vary the background color for each tab"
+msgstr "Cor de fundo _variável para cada separador"
+
+#: ../terminal/terminal-preferences.glade.h:107
+msgid ""
+"The random color is based on the selected background color, keeping the same"
+" brightness. "
+msgstr "A cor aleatória baseia-se na cor de fundo selecionada, mantendo o mesmo brilho."
+
+#: ../terminal/terminal-preferences.glade.h:108
+msgid "General"
+msgstr "Geral"
+
+#: ../terminal/terminal-preferences.glade.h:109
+msgid "Choose text selection foreground color"
+msgstr "Escolher cor de primeiro plano do texto selecionado"
+
+#: ../terminal/terminal-preferences.glade.h:110
+msgid "Choose bold font color"
+msgstr "Escolher a cor de texto negrito"
+
+#: ../terminal/terminal-preferences.glade.h:111
+msgid "Text _selection color:"
+msgstr "Cor do texto _selecionado:"
+
+#: ../terminal/terminal-preferences.glade.h:112
+msgid ""
+"Enable this option to set custom text and background colors for the "
+"selection. If disabled the background and text colors will be reversed."
+msgstr "Ativar esta opção para definir cores de texto e de fundo personalizadas para a seleção. Se inativa, as cores de fundo e do texto serão invertidas."
+
+#: ../terminal/terminal-preferences.glade.h:113
+msgid "B_old text color:"
+msgstr "C_or do texto negrito:"
+
+#: ../terminal/terminal-preferences.glade.h:114
+msgid ""
+"Enable this option to set a custom bold color. If disabled the text color "
+"will be used."
+msgstr "Ativar esta opção para definir uma cor negrito personalizada. Se estiver inativa, será utilizada a cor do texto."
+
+#: ../terminal/terminal-preferences.glade.h:115
+msgid "Choose text selection background color"
+msgstr "Escolher a cor de fundo da seleção de texto"
+
+#: ../terminal/terminal-preferences.glade.h:116
+msgid "Custom Colors"
+msgstr "Cores personalizadas"
+
+#: ../terminal/terminal-preferences.glade.h:117
+msgid "Black"
+msgstr "Preto"
+
+#: ../terminal/terminal-preferences.glade.h:118
+msgid "Dark Gray"
+msgstr "Cinzento escuro"
+
+#: ../terminal/terminal-preferences.glade.h:119
+msgid "Red"
+msgstr "Vermelho"
+
+#: ../terminal/terminal-preferences.glade.h:120
+msgid "Light Red"
+msgstr "Vermelho claro"
+
+#: ../terminal/terminal-preferences.glade.h:121
+msgid "Green"
+msgstr "Verde"
+
+#: ../terminal/terminal-preferences.glade.h:122
+msgid "Light Green"
+msgstr "Verde claro"
+
+#: ../terminal/terminal-preferences.glade.h:123
+msgid "Brown / Yellow"
+msgstr "Castanho/Amarelo"
+
+#: ../terminal/terminal-preferences.glade.h:124
+msgid "Yellow"
+msgstr "Amarelo"
+
+#: ../terminal/terminal-preferences.glade.h:125
+msgid "Blue"
+msgstr "Azul"
+
+#: ../terminal/terminal-preferences.glade.h:126
+msgid "Light Blue"
+msgstr "Azul claro"
+
+#: ../terminal/terminal-preferences.glade.h:127
+msgid "Magenta"
+msgstr "Magenta"
+
+#: ../terminal/terminal-preferences.glade.h:128
+msgid "Light Magenta"
+msgstr "Magenta claro"
+
+#: ../terminal/terminal-preferences.glade.h:129
+msgid "Cyan"
+msgstr "Ciano"
+
+#: ../terminal/terminal-preferences.glade.h:130
+msgid "Light Cyan"
+msgstr "Ciano claro"
+
+#: ../terminal/terminal-preferences.glade.h:131
+msgid "Light Gray"
+msgstr "Cinzento claro"
+
+#: ../terminal/terminal-preferences.glade.h:132
+msgid "White"
+msgstr "Branco"
+
+#: ../terminal/terminal-preferences.glade.h:133
+msgid "Palette"
+msgstr "Paleta"
+
+#: ../terminal/terminal-preferences.glade.h:134
+msgid "Presets"
+msgstr "Pré-ajustes"
+
+#: ../terminal/terminal-preferences.glade.h:135
+msgid "_Colors"
+msgstr "_Cores"
+
+#: ../terminal/terminal-preferences.glade.h:136
+msgid ""
+"These options may cause some applications to behave\n"
+"incorrectly. They are only here to allow you to work around\n"
+"certain applications and operating systems that expect\n"
+"different terminal behavior."
+msgstr "Estas opções podem causar um comportamento incorreto\nde algumas aplicações. Estão aqui apenas para permitir\nevitar certas aplicações e sistemas operativos que esperam um comportamento diferente do terminal."
+
+#: ../terminal/terminal-preferences.glade.h:140
+msgid "_Backspace key generates:"
+msgstr "Tecla _Bk Sp (←) gera:"
+
+#: ../terminal/terminal-preferences.glade.h:141
+msgid "_Delete key generates:"
+msgstr "Tecla _Del gera:"
+
+#: ../terminal/terminal-preferences.glade.h:142
+msgid "_Reset compatibility options to defaults"
+msgstr "_Repor opções de compatibilidade pré-definidas"
+
+#: ../terminal/terminal-preferences.glade.h:143
+msgid "_Ambiguous-width characters:"
+msgstr "Caracteres de largura _ambígua:"
+
+#: ../terminal/terminal-preferences.glade.h:144
+msgid "Compatibility"
+msgstr "Compatibilidade"
+
+#: ../terminal/terminal-preferences.glade.h:145
+msgid "Co_mpatibility"
+msgstr "Co_mpatibilidade"
+
+#: ../terminal/terminal-preferences.glade.h:146
+msgid ""
+"Consider the following\n"
+"characters part of a _word\n"
+"when double clicking:"
+msgstr "Considerar os seguintes\ncarateres parte duma _palavra\nao fazer duplo clique:"
+
+#: ../terminal/terminal-preferences.glade.h:149
+msgid "Rese_t"
+msgstr "Repôr"
+
+#: ../terminal/terminal-preferences.glade.h:150
+msgid "Reset double click options to defaults"
+msgstr "Repôr opções de duplo clique para as originais"
+
+#: ../terminal/terminal-preferences.glade.h:151
+msgid "Double Click"
+msgstr "Duplo clique"
+
+#: ../terminal/terminal-preferences.glade.h:152
+msgid "Default character e_ncoding:"
+msgstr "Codificação de caracteres pré-d_efinida:"
+
+#: ../terminal/terminal-preferences.glade.h:153
+msgid "Encoding"
+msgstr "Codificação"
+
+#: ../terminal/terminal-preferences.glade.h:154
+msgid "Disable all me_nu access keys (such as Alt+f)"
+msgstr "Desligar todas as teclas de acesso do me_nu (como Alt+F)"
+
+#: ../terminal/terminal-preferences.glade.h:155
+msgid "Disable m_enu shortcut key (F10 by default)"
+msgstr "Desativar teclas de atalho de m_enu (F10 por pré-definição)"
+
+#: ../terminal/terminal-preferences.glade.h:156
+msgid "Disable _help window shortcut key (F1 by default)"
+msgstr "Desligar tecla de atalho da janela de ajuda (F1 por omissão)"
+
+#: ../terminal/terminal-preferences.glade.h:157
+msgid "Shortcuts"
+msgstr "Atalhos"
+
+#: ../terminal/terminal-preferences.glade.h:158
+msgid "Use _middle mouse click to close tabs"
+msgstr "Usar clique do _meio para fechar separadores"
+
+#: ../terminal/terminal-preferences.glade.h:159
+msgid "Auto-hi_de mouse pointer"
+msgstr "Ocultar automático do ponteiro do rato"
+
+#: ../terminal/terminal-preferences.glade.h:160
+msgid "Re_wrap terminal contents on resize"
+msgstr "Re-_envolver conteúdo do terminal ao redimensionar"
+
+#: ../terminal/terminal-preferences.glade.h:161
+msgid "Automatically _copy selection to clipboard"
+msgstr "_Copiar automaticamente a seleção para área de transferência"
+
+#: ../terminal/terminal-preferences.glade.h:162
+msgid "Use custom styling to make tabs _slim (restart required)"
+msgstr "Usar estilo personalizado para tornar separadores _curtos (requer reiniciar)"
+
+#: ../terminal/terminal-preferences.glade.h:163
+msgid "Misc"
+msgstr "Vários"
+
+#: ../terminal/terminal-preferences.glade.h:164
+msgid "Ad_vanced"
+msgstr "A_vançado"
+
+#: ../xfce4-terminal.desktop.in.h:2
+msgid "Terminal Emulator"
+msgstr "Emulador de terminal"

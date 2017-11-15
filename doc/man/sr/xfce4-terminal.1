@@ -1,0 +1,351 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: ИксФЦЕ
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "ИксФЦЕ"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- Опонашавач Терминала за Икс
+.SH "Садржај"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [МОГУЋНОСТ...]
+.SH "Опис"
+.PP
+xfce4\-terminal је познат као опонашавач терминала за Икс, често називан као терминал, или љуска\&. Он омогућује замену за старомодни екран са текстом на Вашем радном простору, али такав да лако може делити екран са другим графичким програмима\&. Корисници Прозора могу бити већ упознати са МС\-ДОС упитним прибором, који има одговарајућу улогу обезбеђивања ДОС наредбене линије под Прозорима, иако би требали напоменути да је УНИКС СНЛ моћнија и лакша за употребу него што је нуди ДОС\&.
+.PP
+xfce4\-terminal опонаша програм
+икстерм
+развијен од стране Икс удружења\&. Са друге стране,
+икстерм
+опонаша DEC VT102 терминал и такође подржава DEC VT220 излазне низове\&. Излазни низови су низови знакова који почињу са
+Изл
+знаком\&. xfce4\-terminal прихвата све излазне низове које користе VT102 и VT220 терминали за улогу излазног низа лап што је положај показивача и чишћење екрана\&.
+.SH "Могућности"
+.SS "Збир могућности"
+.PP
+Овде је збир свих могућности, здружених по врсти\&. Објашњења су у наредним одељцима\&.
+.PP
+Опште могућности
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIприказ\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIфасцикла\fR\fR
+.RE
+.PP
+Одвајачи прозора или језичака
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Могућности језичка
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIнаредба\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIфасцикла\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIнаслов\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Могућности прозора
+.RS 4
+\fB\-\-display=\fR\fB\fIприказ\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIразмера\fR\fR;
+\fB\-\-role=\fR\fB\fIулога\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIниска\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIикона\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "Опште могућности"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Излистај различите могућности наредбене линије подржане од xfce4\-terminal и изађи
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Исписује податке о издању и излази
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Не пријављуј на сабирницу порука Д\-сабирнице сесије
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Приказује шифре боје
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIприказ\fR\fR
+.RS 4
+Подразумевани Икс приказ за употребу\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIфасцикла\fR\fR
+.RS 4
+Поставља
+\fIдиректоријум\fR
+као основни радни директоријум за терминал
+.RE
+.SS "Одвајачи прозора или језичака"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Отвара нови језичак у последњем одређеном прозору; више од једне оваквих могућности може бити обезбеђено\&.
+.sp
+Ако користите ово као прву могућност, без \-\-window раздвајача, последњи прозор ће бити поново коришћен\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Отвара нови прозор који садржи један језичак; Више од једне оваквих могућности може бити обезбеђено\&.
+.RE
+.SS "Могућности језичка"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Извршава подсетник наредбене линије унутар терминала
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIнаредба\fR\fR
+.RS 4
+Извршава
+\fIнаредбу\fR
+унутар терминала
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIфасцикла\fR\fR
+.RS 4
+Поставља
+\fIдиректоријум\fR
+као радну фасциклу терминала
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fIнаслов\fR\fR
+.RS 4
+Поставља
+\fIнаслов\fR
+за почетни наслов прозора терминала
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Узрокује да терминал остане при руци након завршетка наредбе
+.RE
+.SS "Могућности прозора"
+.PP
+\fB\-\-display=\fR\fB\fIприказ\fR\fR
+.RS 4
+Икс приказ за употребу за последње изабрани прозор\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIразмера\fR\fR
+.RS 4
+Поставља размеру последњем изабраном прозору на
+\fIразмеру\fR\&. Прочитајте
+\fBX\fR(7)
+за више података о томе како одредити размере прозора\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIулога\fR\fR
+.RS 4
+Поставља улогу прозора последњем одређеном прозору на
+\fIrole\fR\&. Примењује се само на један прозор и може бити одређено једном за сваки прозор који образујете из наредбене линије\&.
+\fIrole\fR
+је јединствена одредница за прозор која се користи за повраћај сесије\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIниска\fR\fR
+.RS 4
+Одређује лб обавештења о покретању за последњи покренути прозор\&. Користи се изнутра да проследи лб обавештења о покретању при употреби услуге Д\-сабирнице\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIикона\fR\fR
+.RS 4
+Поставља икону терминала као име иконе или датотеке\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Поставља задњи одређен прозор у стање увећаности; односи се само на један прозор; може бити одређено једном за сваки од прозора који образујете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Поставља задњи одређен прозор у стање увећаности; односи се само на један прозор; може бити одређено једном за сваки од прозора који образујете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Искључује украсе прозора за последњи одређени прозор\&. Односи се само наједан прозор\&. може бити одређено једном за сваки од прозора који покренете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Искључује траку изборника за задњи одређени прозор\&. Може бити одређено једном за сваки од прозора које покрећете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Укључује украсе прозора за последњи одређени прозор\&. Односи се само наједан прозор\&. Може бити одређено једном за сваки од прозора који покренете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Искључује украшавање прозора за задњи одређени прозор\&.Односи се само на један прозор\&. Може бити одређено једном за сваки од прозора које покренете наредбеном линијом\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "Примери"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Отвара нови прозор терминала са размером 80 стубаца и 40 редова и два језичка у њему, где је у првом језичку покренут
+\fBmutt\fR, а у другом покренут
+\fBmc\fR\&.
+.RE
+.SH "Окружење"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+Основна фасцикла која ће бити прегледана за датотекама поставки\&. Подразумевано је подешена у
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+Списак основних фасцикли раздвојен двотачкама који садржи датотеке поставки\&. Подразумевано ће програми прегледати
+${sysconfdir}/xdg/\&. Вредност у
+\fI${sysconfdir}\fR
+зависи од тога како је програм изграђен и често ће бити у
+/etc/
+за бинарне пакете\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+Корен свих кориснички одређених датотека\&. Подразумевано је подешен као
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+Скуп жељеног уређења основних фасцикли по којима би се требале претраживати датотеке, као додатак
+\fI${XDG_DATA_HOME}\fR
+основној фасцикли\&. Фасцикле се требају одвајати тачком и запетом\&.
+.RE
+.SH "Датотеке"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+Ово је путања датотеке поставки које укључују поставке које управљају изгледом и осећејем xfce4\-terminal\&.
+.RE
+.SH "Видети такође:"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+Развијач
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Развијач
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Програмски развијач, ос\-цилација, Развој система, 
+.RS 4
+Развијач
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

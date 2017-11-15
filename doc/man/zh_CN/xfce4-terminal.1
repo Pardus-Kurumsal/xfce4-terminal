@@ -1,0 +1,348 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Igor Zakharov <f2404@yandex.ru>
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 07/15/2017
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.8.6
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "07/15/2017" "xfce4-terminal 0\&.8\&.6" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- X 终端模拟器
+.SH "摘要"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [选项...]
+.SH "描述"
+.PP
+xfce4\-terminal 即众所周知的 X 终端模拟器，常被称作终端或 shell。它在您桌面上提供了一个老式的文本界面等价物，但可以方便地与其它图形应用程序共享屏幕。Windows 用户可能已熟悉 MS\-DOS 提示符这个在 Windows 下提供类似 DOS 命令行功能的工具，然而您必须注意到 UNIX CLI 比 DOS 提供更为强大的功能和更方便的使用方式。
+.PP
+xfce4\-terminal 模拟 X 组织开发的
+xterm
+应用程序。按顺序，xterm
+应用程序模拟 DEC VT102 终端且也支持 DEC VT220 转义序列。转义序列是以
+Esc
+字符开始的一组字符。xfce4\-terminal 接受所有 VT102 和 VT220 终端用以定位光标和清除屏幕等功能的转义序列。
+.SH "选项"
+.SS "选项摘要"
+.PP
+这是按类型分组的所有选项的摘要。具体解释在后续章节。
+.PP
+一般选项
+.RS 4
+\fB\-h\fR，\fB\-\-help\fR;
+\fB\-V\fR，\fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fI显示\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fI目录\fR\fR
+.RE
+.PP
+窗口或标签分隔符
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+标签选项
+.RS 4
+\fB\-x\fR，\fB\-\-execute\fR;
+\fB\-e\fR，\fB\-\-command=\fR\fB\fI命令\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fI目录\fR\fR;
+\fB\-T\fR，\fB\-\-title=\fR\fB\fI标题\fR\fR;
+\fB\-H\fR，\fB\-\-hold\fR
+.RE
+.PP
+窗口选项
+.RS 4
+\fB\-\-display=\fR\fB\fI显示\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fI几何属性\fR\fR;
+\fB\-\-role=\fR\fB\fI识别码\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fI字符串\fR\fR;
+\fB\-I，\-\-icon=\fR\fB\fI图标\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-minimize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+\fB\-\-show\-scrollbar\fR,
+\fB\-\-hide\-scrollbar\fR
+.RE
+.SS "一般选项"
+.PP
+\fB\-h\fR，\fB\-\-help\fR
+.RS 4
+列出 xfce4\-terminal 支持的各种命令行选项并退出
+.RE
+.PP
+\fB\-V\fR，\fB\-\-version\fR
+.RS 4
+显示版本信息并退出
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+不用 D\-BUS 会话消息总线注册
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fI显示\fR\fR
+.RS 4
+默认使用的 X 显示。
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fI目录\fR\fR
+.RS 4
+设置
+\fI目录\fR
+为终端的默认工作目录
+.RE
+.SS "窗口或标签分隔符"
+.PP
+\fB\-\-tab\fR
+.RS 4
+在上次指定的窗口中打开新标签；可以使用多个该选项。
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+打开一个包含单个标签的新窗口；可以使用多个该选项。
+.RE
+.SS "标签选项"
+.PP
+\fB\-x\fR，\fB\-\-execute\fR
+.RS 4
+在终端中执行命令行的剩余部分
+.RE
+.PP
+\fB\-e\fR，\fB\-\-command=\fR\fB\fI命令\fR\fR
+.RS 4
+在终端中执行
+\fI命令\fR
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fI目录\fR\fR
+.RS 4
+设置
+\fI目录\fR
+为终端的工作目录
+.RE
+.PP
+\fB\-T\fR，\fB\-\-title=\fR\fB\fI标题\fR\fR
+.RS 4
+设置
+\fI标题\fR
+为终端的初始窗口标题
+.RE
+.PP
+\fB\-H\fR，\fB\-\-hold\fR
+.RS 4
+使终端在子命令终止后继续工作
+.RE
+.SS "窗口选项"
+.PP
+\fB\-\-display=\fR\fB\fI显示\fR\fR
+.RS 4
+用于上次指定的窗口的 X 显示。
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fI几何属性\fR\fR
+.RS 4
+设置上次指定的窗口的几何形状为
+\fI几何形状\fR。阅读
+\fBX\fR(7)
+获取更多有关如何指定窗口的信息。
+.RE
+.PP
+\fB\-\-role=\fR\fB\fI识别码\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fI字符串\fR\fR
+.RS 4
+设置上次指定的窗口的启动通知标识符。用于使用 D\-BUS 服务时在内部传送启动提示标识符。
+.RE
+.PP
+\fB\-I，\-\-icon=\fR\fB\fI图标\fR\fR
+.RS 4
+设置终端的图标作为图标名称或文件名。
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+设置上次指定的窗口为全屏模式；只对一个窗口生效；对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+设置上次指定的窗口为最大化模式；只对一个窗口生效；对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-minimize\fR
+.RS 4
+Set the last\-specified window into minimized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+设置上次指定的窗口显示菜单栏。对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+设置上次指定的窗口不显示菜单栏。对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+设置上次指定的窗口显示窗口修饰。只对一个窗口生效。对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+设置上次指定的窗口不显示窗口修饰。只对一个窗口生效。对每个您从命令行创建的窗口只能指定一次。
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-scrollbar\fR
+.RS 4
+Turn on the scrollbar for the last\-specified window\&. Scrollbar position is taken from the settings; if position is None, the default position is Right side\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-scrollbar\fR
+.RS 4
+Turn off the scrollbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-font=\fR\fB\fIfont\fR\fR
+.RS 4
+Set the terminal font\&.
+.RE
+.PP
+\fB\-\-zoom=\fR\fB\fIzoom\fR\fR
+.RS 4
+Set the zoom level: the font size will be multiplied by this level\&. The range is from \-7 to 7, default is 0\&. Each step multiplies the size by 1\&.2, i\&.e\&. level 7 is 3\&.5831808 (1\&.2^7) times larger than the default size\&.
+.RE
+.SH "例子"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+打开一个 80 列 40 行几何形状且有两个标签的新终端窗口，第一个标签运行程序
+\fBmutt\fR，第二个标签运行
+\fBmc\fR。
+.RE
+.SH "环境"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+第一个基本目录去找配置文件。其默认设为
+~/\&.config/。
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+以冒号分隔包含配置数据的基本目录列表。应用程序默认会在
+${sysconfdir}/xdg/
+中查找。\fI${sysconfdir}\fR
+值取决于程序如何编译且对于二进制软件包通常为
+/etc/。
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+用于用户个人数据文件的根目录。默认设置为
+~/\&.local/share/。
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+一系列优先排列的除
+\fI${XDG_DATA_HOME}\fR
+基本目录之外与搜索数据文件有关的基本目录。这些目录之间应该以冒号分隔。
+.RE
+.SH "文件"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+这是包含控制 xfce4\-terminal 感观的首选项的配置文件的位置。
+.RE
+.SH "参见"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBIgor Zakharov\fR <\&f2404@yandex\&.ru\&>
+.RS 4
+开发者
+.RE
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+开发者
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+软件开发者, os\-cillation, 系统开发, 
+.RS 4
+开发者
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE
