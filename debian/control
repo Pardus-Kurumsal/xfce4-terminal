@@ -3,7 +3,8 @@ Section: xfce
 Priority: optional
 Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
 Uploaders: Yves-Alexis Perez <corsac@debian.org>,
-           Lionel Le Folgoc <mrpouit@gmail.com>
+           Lionel Le Folgoc <mrpouit@gmail.com>,
+           Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
 Build-Depends: chrpath,
                debhelper (>= 9),
                intltool,
@@ -13,7 +14,7 @@ Build-Depends: chrpath,
                libvte-2.91-dev,
                libxfce4ui-2-dev (>= 4.10),
                libxml-perl
-Standards-Version: 4.0.0
+Standards-Version: 3.9.8
 Homepage: http://goodies.xfce.org/projects/applications/terminal
 Vcs-Svn: svn://anonscm.debian.org/pkg-xfce/desktop/trunk/xfce4-terminal/
 Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-xfce/desktop/trunk/xfce4-terminal/
