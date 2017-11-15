@@ -1,3 +1,11 @@
+xfce4-terminal (0.8.6-2pardus1) unstable; urgency=medium
+
+  * Update control file
+  * Add patches
+  * Pardus CI implementation
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Wed, 15 Nov 2017 13:07:33 +0300
+
 xfce4-terminal (0.8.6-1) unstable; urgency=medium
 
   * New upstream bugfix release.
